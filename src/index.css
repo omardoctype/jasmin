@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --color-beige: #ede6da;
+  --color-sand: #d8c7a6;
+  --color-gold: #b79a6b;
+  --color-brown: #8c6f4a;
+  --color-dark-brown: #4a3a2a;
+  --color-ink: #1a1a1a;
+  --color-ivory: #f7f5f0;
+}
+
+@theme inline {
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+  --color-jasmin-beige: var(--color-beige);
+  --color-jasmin-sand: var(--color-sand);
+  --color-jasmin-gold: var(--color-gold);
+  --color-jasmin-brown: var(--color-brown);
+  --color-jasmin-dark: var(--color-dark-brown);
+  --color-jasmin-ink: var(--color-ink);
+  --color-jasmin-ivory: var(--color-ivory);
+}
+
+@layer base {
+  * {
+    border-color: rgba(140, 111, 74, 0.14);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply min-h-screen bg-jasmin-ivory font-sans text-jasmin-ink antialiased;
+    background-image:
+      radial-gradient(circle at top, rgba(216, 199, 166, 0.28), transparent 38%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(247, 245, 240, 0.96));
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-jasmin-gold/45 focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  ::selection {
+    background: rgba(183, 154, 107, 0.24);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-shell {
+    @apply py-20 sm:py-24 lg:py-28;
+  }
+
+  .surface-card {
+    @apply rounded-[28px] border border-jasmin-brown/12 bg-white/72 shadow-[0_24px_80px_-48px_rgba(74,58,42,0.55)] backdrop-blur-[10px];
+  }
+
+  .soft-panel {
+    @apply rounded-[24px] border border-white/60 bg-white/74 shadow-[0_20px_70px_-45px_rgba(74,58,42,0.48)];
+  }
+
+  .section-tag {
+    @apply inline-flex items-center gap-2 rounded-full border border-jasmin-gold/22 bg-white/72 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-jasmin-brown;
+  }
+
+  .ambient-grid {
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0)),
+      linear-gradient(rgba(183, 154, 107, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(183, 154, 107, 0.08) 1px, transparent 1px);
+    background-position: 0 0, 0 0, 0 0;
+    background-size: 100% 100%, 38px 38px, 38px 38px;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 ease-out hover:-translate-y-[6px];
+  }
+}
