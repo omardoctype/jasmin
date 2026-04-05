@@ -3,6 +3,7 @@ export default function ChefCard({
   specialty,
   bio,
   image,
+  imagePosition = 'center top',
 }) {
   return (
     <article className="surface-card hover-lift h-full overflow-hidden">
@@ -12,7 +13,8 @@ export default function ChefCard({
             src={image}
             alt={name}
             loading="lazy"
-            className="h-80 w-full object-cover transition-transform duration-500 ease-out hover:scale-[1.03]"
+            className="h-[22rem] w-full object-cover transition-transform duration-500 ease-out hover:scale-[1.03] sm:h-[24rem] lg:h-[26rem]"
+            style={{ objectPosition: imagePosition }}
           />
         </div>
         <div className="space-y-4 p-6">
@@ -28,4 +30,3 @@ export default function ChefCard({
     </article>
   );
 }
-

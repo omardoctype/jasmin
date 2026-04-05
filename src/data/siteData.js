@@ -1,6 +1,8 @@
 import aboutAtelier from '../assets/about-atelier.svg';
-import brandMark from '../assets/brand-mark.svg';
-import chefPlaceholder from '../assets/chef-placeholder.svg';
+import brandMark from '../assets/logo.png';
+import chefHassen from '../assets/chefs/Hassen ALLAGUI.jpg';
+import chefKhalil from '../assets/chefs/Khalil ARFI.jpg';
+import chefManel from '../assets/chefs/Manel SALLEMI.jpg';
 import eventPlaceholder from '../assets/event-placeholder.svg';
 import heroVisual from '../assets/hero-visual.svg';
 import mapPlaceholder from '../assets/map-placeholder.svg';
@@ -12,7 +14,7 @@ export const brand = {
 };
 
 export const contactDetails = {
-  phone: '+216 23 061 414',
+  phone: '52 694 594',
   email: 'ecole.jasmin2012@gmail.com',
   address: 'Route de Tunis km 6, Sakiet Ezzit, Sfax, Tunisia',
   mapUrl:
@@ -105,22 +107,25 @@ export const formations = [
 
 export const chefs = [
   {
-    name: 'Chef Karim Ben Amor',
-    specialty: 'Cuisine gastronomique',
-    bio: 'Accompagne les étudiants sur la précision technique, la maîtrise des sauces et le sens du détail en service.',
-    image: chefPlaceholder,
-  },
-  {
-    name: 'Cheffe Inès Gharbi',
+    name: 'Chef Hassen Allagui',
     specialty: 'Pâtisserie fine',
-    bio: 'Spécialiste des entremets, viennoiseries et finitions premium avec une pédagogie très axée sur le geste juste.',
-    image: chefPlaceholder,
+    bio: 'Accompagne les étudiants sur la précision technique, la maîtrise des sauces et le sens du détail en service.',
+    image: chefHassen,
+    imagePosition: 'center 18%',
   },
   {
-    name: 'Chef Mehdi Trabelsi',
+    name: 'Chef Khalil Arfi',
+    specialty: 'Cuisine gastronomique',
+    bio: 'Spécialiste des entremets, viennoiseries et finitions premium avec une pédagogie très axée sur le geste juste.',
+    image: chefKhalil,
+    imagePosition: 'center 14%',
+  },
+  {
+    name: 'Cheffe Manel Sallemi',
     specialty: 'Cuisine d’application',
     bio: 'Met l’accent sur le rythme réel du laboratoire, l’organisation et les standards attendus en environnement pro.',
-    image: chefPlaceholder,
+    image: chefManel,
+    imagePosition: 'center 12%',
   },
 ];
 
@@ -192,6 +197,39 @@ export const studentSupport = [
   'Suivi dédié pour une intégration fluide au centre',
 ];
 
+export const sponsors = [
+  {
+    name: 'Maison Gourmet',
+    category: 'Partenaire premium',
+    icon: 'award',
+  },
+  {
+    name: 'Atelier Café',
+    category: 'Fournisseur',
+    icon: 'coffee',
+  },
+  {
+    name: 'Croissant Signature',
+    category: 'Pâtisserie',
+    icon: 'croissant',
+  },
+  {
+    name: 'Cuisine Prestige',
+    category: 'Équipement',
+    icon: 'utensils',
+  },
+  {
+    name: 'Saveurs du Chef',
+    category: 'Gastronomie',
+    icon: 'soup',
+  },
+  {
+    name: 'Marché Sélect',
+    category: 'Distribution',
+    icon: 'store',
+  },
+];
+
 export const footerLinks = [
   { label: 'Formations', href: '#formations' },
   { label: 'Chefs', href: '#chefs' },
@@ -202,4 +240,3 @@ export const footerLinks = [
 export const imagery = {
   map: mapPlaceholder,
 };
-

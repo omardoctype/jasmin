@@ -9,6 +9,7 @@ const iconMap = {
 };
 
 export default function FormationCard({
+  id,
   title,
   description,
   icon,
@@ -16,7 +17,10 @@ export default function FormationCard({
   const Icon = iconMap[icon] ?? ChefHat;
 
   return (
-    <article className="surface-card hover-lift h-full p-6 sm:p-7">
+    <article
+      id={id}
+      className="surface-card hover-lift h-full scroll-mt-32 p-6 sm:p-7"
+    >
       <div className="flex h-full flex-col gap-6">
         <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-jasmin-dark text-white shadow-[0_18px_34px_-24px_rgba(74,58,42,0.95)]">
           <Icon className="h-6 w-6" />
@@ -29,4 +33,3 @@ export default function FormationCard({
     </article>
   );
 }
-

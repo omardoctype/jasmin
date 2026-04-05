@@ -4,6 +4,7 @@ export default function SectionHeading({
   eyebrow,
   title,
   description,
+  eyebrowLogo,
   align = 'left',
   className = '',
 }) {
@@ -13,7 +14,17 @@ export default function SectionHeading({
   return (
     <Reveal className={className}>
       <div className={`flex flex-col gap-4 ${alignment}`}>
-        <span className="section-tag">{eyebrow}</span>
+        <span className="section-tag gap-3">
+          {eyebrowLogo ? (
+            <img
+              src={eyebrowLogo}
+              alt=""
+              aria-hidden="true"
+              className="h-5 w-5 rounded-full object-cover"
+            />
+          ) : null}
+          <span>{eyebrow}</span>
+        </span>
         <div className="space-y-4">
           <h2 className="font-display text-4xl leading-none text-jasmin-dark sm:text-5xl">
             {title}
