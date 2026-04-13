@@ -3,7 +3,7 @@ import { brand, contactDetails } from '../data/siteData';
 
 const quickLinks = [
   { label: 'Accueil', href: '#accueil' },
-  { label: 'Formation de base', href: '#formation-base' },
+  { label: 'Formations', href: '#formations' },
   { label: "L'ecole", href: '#ecole' },
   { label: 'Chefs', href: '#chefs' },
   { label: 'Nos sponsors', href: '#sponsors' },
@@ -31,7 +31,7 @@ export default function Footer() {
           </a>
 
           <p className="max-w-xl text-sm leading-8 text-jasmin-dark/72">
-            Un centre de formation professionnelle en cuisine et en patisserie, pense pour transmettre la rigueur, le geste juste et une vraie culture du metier.
+            Un centre de formation en cuisine et en patisserie pour apprendre un vrai metier.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
 
       <div className="site-container mt-12 border-t border-jasmin-brown/10 pt-6 text-sm text-jasmin-dark/58">
-        © 2026 Ecole Jasmin - Centre de Formation Professionnelle. Tous droits reserves.
+        © 2026 Ecole Jasmin - Centre de formation professionnelle. Tous droits reserves.
       </div>
     </footer>
   );

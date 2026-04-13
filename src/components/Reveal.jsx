@@ -1,10 +1,21 @@
 import { motion, useReducedMotion } from 'framer-motion';
 
+const variantMap = {
+  'fade-up': { opacity: 0, y: 18 },
+  'fade-down': { opacity: 0, y: -18 },
+  'fade-left': { opacity: 0, x: 20 },
+  'fade-right': { opacity: 0, x: -20 },
+  'zoom-in': { opacity: 0, scale: 0.97, y: 12 },
+};
+
 export default function Reveal({
   children,
   className = '',
   delay = 0,
-  y = 24,
+  y = 18,
+  variant = 'fade-up',
+  once = true,
+  amount = 0.08,
 }) {
   const reduceMotion = useReducedMotion();
 
@@ -12,16 +23,31 @@ export default function Reveal({
     return <div className={className}>{children}</div>;
   }
 
+  const initial = variantMap[variant] ?? { opacity: 0, y };
+  const inView = { opacity: 1 };
+
+  if ('x' in initial) {
+    inView.x = 0;
+  }
+
+  if ('y' in initial) {
+    inView.y = 0;
+  }
+
+  if ('scale' in initial) {
+    inView.scale = 1;
+  }
+
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.65, delay, ease: [0.22, 1, 0.36, 1] }}
+      initial={initial}
+      whileInView={inView}
+      whileHover={variant === 'zoom-in' ? { y: -4 } : undefined}
+      viewport={{ once, amount, margin: '0px 0px 12% 0px' }}
+      transition={{ duration: 0.42, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>
   );
 }
-

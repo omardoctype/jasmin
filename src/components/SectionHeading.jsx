@@ -12,7 +12,10 @@ export default function SectionHeading({
     align === 'center' ? 'mx-auto max-w-3xl text-center items-center' : 'max-w-3xl';
 
   return (
-    <Reveal className={className}>
+    <Reveal
+      className={className}
+      variant={align === 'center' ? 'zoom-in' : 'fade-right'}
+    >
       <div className={`flex flex-col gap-4 ${alignment}`}>
         <span className="section-tag gap-3">
           {eyebrowLogo ? (

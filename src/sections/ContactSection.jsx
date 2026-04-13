@@ -33,15 +33,15 @@ export default function ContactSection() {
     };
 
     if (!trimmedData.name || !trimmedData.email || !trimmedData.phone || !trimmedData.message) {
-      setError('Veuillez remplir tous les champs obligatoires avant l envoi.');
+      setError('Veuillez remplir tous les champs avant denvoyer votre message.');
       return;
     }
 
     const whatsappMessage = encodeURIComponent(
-      `Bonjour, je vous contacte depuis le site de l'école.\n\nNom: ${trimmedData.name}\nEmail: ${trimmedData.email}\nTéléphone: ${trimmedData.phone}\nMessage: ${trimmedData.message}`,
+      `Bonjour, je vous contacte depuis le site de l ecole.\n\nNom: ${trimmedData.name}\nEmail: ${trimmedData.email}\nTelephone: ${trimmedData.phone}\nMessage: ${trimmedData.message}`,
     );
 
-    window.open(`https://wa.me/21652694594?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/21623061414?text=${whatsappMessage}`, '_blank');
   };
 
   return (
@@ -53,12 +53,12 @@ export default function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           eyebrowLogo={schoolLogo}
-          title="Un accompagnement clair, rapide et humain"
-          description="Prenez contact avec l'ecole pour preparer votre inscription, visiter le centre ou obtenir un conseil sur le meilleur parcours a suivre."
+          title="Contactez notre equipe"
+          description="Ecrivez-nous pour obtenir des informations, preparer votre inscription ou organiser une visite du centre."
         />
 
         <div className="grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
-          <Reveal>
+          <Reveal variant="fade-right">
             <div className="surface-card overflow-hidden p-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2467742473423!2d10.75735701132729!3d34.799732877779604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d3a472360ef3%3A0x8fb51b76828bd55f!2sCentre%20Jasmin%20pour%20la%20Formation%20en%20P%C3%A2tisserie%20et%20en%20cuisine!5e0!3m2!1sfr!2stn!4v1775411867203!5m2!1sfr!2stn"
@@ -72,7 +72,7 @@ export default function ContactSection() {
                   href={contactDetails.mapUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4 transition-transform duration-300 hover:-translate-y-1"
+                  className="hover-glow rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4"
                 >
                   <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-jasmin-dark text-white">
                     <MapPin className="h-5 w-5" />
@@ -84,7 +84,7 @@ export default function ContactSection() {
                 <div className="grid gap-4">
                   <a
                     href={`tel:${contactDetails.phone.replaceAll(' ', '')}`}
-                    className="rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4 transition-transform duration-300 hover:-translate-y-1"
+                    className="hover-glow rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4"
                   >
                     <Phone className="h-5 w-5 text-jasmin-gold" />
                     <p className="mt-4 text-sm font-semibold text-jasmin-dark">Telephone</p>
@@ -93,7 +93,7 @@ export default function ContactSection() {
 
                   <a
                     href={`mailto:${contactDetails.email}`}
-                    className="rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4 transition-transform duration-300 hover:-translate-y-1"
+                    className="hover-glow rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4"
                   >
                     <Mail className="h-5 w-5 text-jasmin-gold" />
                     <p className="mt-4 text-sm font-semibold text-jasmin-dark">Email</p>
@@ -104,17 +104,20 @@ export default function ContactSection() {
             </div>
           </Reveal>
 
-          <Reveal delay={0.08}>
-            <div className="surface-card p-6 sm:p-8">
+          <Reveal
+            delay={0.08}
+            variant="zoom-in"
+          >
+            <div className="surface-card hover-glow p-6 sm:p-8">
               <div className="space-y-3">
                 <p className="text-xs font-semibold uppercase tracking-[0.22em] text-jasmin-brown">
                   Formulaire
                 </p>
                 <h3 className="font-display text-4xl leading-none text-jasmin-dark">
-                  Demander un echange personnalise
+                  Envoyer votre demande
                 </h3>
                 <p className="max-w-2xl text-sm leading-7 text-jasmin-dark/70">
-                  Votre message ouvre directement WhatsApp avec les informations du formulaire, pour garder l'experience simple, rapide et sans backend.
+                  Votre message sera prepare automatiquement dans WhatsApp pour un contact simple et rapide.
                 </p>
               </div>
 
@@ -172,7 +175,7 @@ export default function ContactSection() {
                     value={formData.message}
                     onChange={handleChange}
                     className="rounded-[24px] border border-jasmin-brown/12 bg-white/78 px-4 py-4 text-sm text-jasmin-dark placeholder:text-jasmin-dark/34"
-                    placeholder="Parlez-nous de votre projet ou de la formation qui vous interesse."
+                    placeholder="Precisez votre demande ou la formation qui vous interesse."
                   />
                 </label>
 
@@ -184,7 +187,7 @@ export default function ContactSection() {
 
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm leading-7 text-jasmin-dark/62">
-                    Reponse rapide via WhatsApp pour vous orienter efficacement.
+                    Reponse rapide par WhatsApp.
                   </p>
                   <button
                     type="submit"

@@ -12,8 +12,8 @@ export default function FAQSection() {
       <div className="site-container space-y-14">
         <SectionHeading
           eyebrow="FAQ"
-          title="Les informations essentielles avant de vous inscrire"
-          description="Un aperçu rapide pour comprendre les parcours, les conditions d’admission et les modalités d’accueil."
+          title="Questions frequentes avant votre inscription"
+          description="Retrouvez ici des reponses claires sur les formations, ladmission et laccueil."
           align="center"
         />
 
@@ -39,4 +39,3 @@ export default function FAQSection() {
     </section>
   );
 }
-

@@ -1,19 +1,27 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { ChevronDown, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { brand } from '../data/siteData';
 import useScrolled from '../hooks/useScrolled';
 
 const mainLinks = [
   { label: 'Accueil', href: '#accueil' },
-  { label: 'Formation de base', href: '#formation-base' },
   { label: "L'ecole", href: '#ecole' },
   { label: 'Nos chefs', href: '#chefs' },
   { label: 'Contact', href: '#contact' },
 ];
 
+const formationLinks = [
+  { label: 'BTP Patisserie', href: '#/formations/btp-patisserie' },
+  { label: 'BTP Cuisine', href: '#/formations/btp-cuisine' },
+  { label: 'CAP', href: '#/formations/cap' },
+  { label: 'CC Patisserie', href: '#/formations/cc-patisserie' },
+  { label: 'CC Cuisine', href: '#/formations/cc-cuisine' },
+];
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [formationsOpen, setFormationsOpen] = useState(false);
   const scrolled = useScrolled(16);
 
   return (
@@ -32,10 +40,10 @@ export default function Navbar() {
           <img
             src={brand.mark}
             alt="Logo Ecole Jasmin"
-            className="h-11 w-11 rounded-2xl shadow-[0_16px_32px_-24px_rgba(74,58,42,0.8)]"
+            className="h-14 w-14 rounded-2xl shadow-[0_16px_32px_-24px_rgba(74,58,42,0.8)] sm:h-16 sm:w-16"
           />
           <div className="min-w-0">
-            <p className="truncate font-display text-2xl leading-none text-jasmin-dark">
+            <p className="truncate font-display text-[1.65rem] leading-none text-jasmin-dark sm:text-[1.85rem]">
               {brand.name}
             </p>
             <p className="truncate text-xs uppercase tracking-[0.24em] text-jasmin-brown/78">
@@ -52,12 +60,49 @@ export default function Navbar() {
             Accueil
           </a>
 
-          <a
-            href="#formation-base"
-            className="text-sm font-medium text-jasmin-dark/76 transition-colors hover:text-jasmin-dark"
+          <div
+            className="relative"
+            onMouseEnter={() => setFormationsOpen(true)}
+            onMouseLeave={() => setFormationsOpen(false)}
           >
-            Formation de base
-          </a>
+            <button
+              type="button"
+              className="inline-flex items-center gap-2 text-sm font-medium text-jasmin-dark/76 transition-colors hover:text-jasmin-dark"
+              aria-expanded={formationsOpen}
+              aria-haspopup="menu"
+              onClick={() => setFormationsOpen((current) => !current)}
+            >
+              <span>Formations</span>
+              <ChevronDown
+                className={`h-4 w-4 transition-transform duration-200 ${formationsOpen ? 'rotate-180' : ''}`}
+              />
+            </button>
+
+            <AnimatePresence>
+              {formationsOpen ? (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.18, ease: 'easeOut' }}
+                  className="absolute left-1/2 top-full z-50 mt-4 w-72 -translate-x-1/2 rounded-[24px] border border-jasmin-brown/10 bg-white/96 p-3 shadow-[0_26px_70px_-34px_rgba(74,58,42,0.32)] backdrop-blur-md"
+                >
+                  <div className="grid gap-2">
+                    {formationLinks.map((item) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        className="rounded-2xl px-4 py-3 text-sm font-medium text-jasmin-dark/80 transition-colors hover:bg-jasmin-ivory hover:text-jasmin-dark"
+                        onClick={() => setFormationsOpen(false)}
+                      >
+                        {item.label}
+                      </a>
+                    ))}
+                  </div>
+                </motion.div>
+              ) : null}
+            </AnimatePresence>
+          </div>
 
           <a
             href="#ecole"
@@ -104,6 +149,28 @@ export default function Navbar() {
             className="border-t border-jasmin-brown/10 bg-white/96 xl:hidden"
           >
             <div className="site-container flex flex-col gap-3 py-5">
+              <div className="rounded-[24px] border border-jasmin-brown/10 bg-jasmin-ivory/45 p-2">
+                <a
+                  href="#formations"
+                  className="block rounded-2xl px-4 py-3 text-sm font-semibold text-jasmin-dark"
+                  onClick={() => setOpen(false)}
+                >
+                  Formations
+                </a>
+                <div className="grid gap-2 px-2 pb-2">
+                  {formationLinks.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="rounded-2xl border border-transparent px-4 py-3 text-sm font-medium text-jasmin-dark/78 transition-colors hover:border-jasmin-brown/10 hover:bg-white"
+                      onClick={() => setOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
               {mainLinks.map((item) => (
                 <a
                   key={item.href}

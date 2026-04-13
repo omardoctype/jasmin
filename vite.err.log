@@ -1,0 +1,1679 @@
+X [ERROR] Could not resolve "./animation/optimized-appear/start.mjs"
+
+    node_modules/framer-motion/dist/es/index.mjs:61:46:
+      61 │ ...edAppearAnimation } from './animation/optimized-appear/start.mjs';
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/animators/waapi/animate-style.mjs"
+
+    node_modules/framer-motion/dist/es/index.mjs:74:28:
+      74 │ ...nimateMini } from './animation/animators/waapi/animate-style.mjs';
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/dom/viewport/index.mjs"
+
+    node_modules/framer-motion/dist/es/index.mjs:76:23:
+      76 │ export { inView } from './render/dom/viewport/index.mjs';
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/index.mjs"
+
+    node_modules/framer-motion/dist/es/motion/features/animations.mjs:1:33:
+      1 │ import { AnimationFeature } from './animation/index.mjs';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../render/dom/scroll/utils/offset-to-range.mjs"
+
+    node_modules/framer-motion/dist/es/value/use-scroll.mjs:6:42:
+      6 │ ...elineRange } from '../render/dom/scroll/utils/offset-to-range.mjs';
+        ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../render/dom/viewport/index.mjs"
+
+    node_modules/framer-motion/dist/es/utils/use-in-view.mjs:3:23:
+      3 │ import { inView } from '../render/dom/viewport/index.mjs';
+        ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/generators/utils/calc-duration.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:27:60:
+      27 │ ...rDuration } from './animation/generators/utils/calc-duration.mjs';
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/exit.mjs"
+
+    node_modules/framer-motion/dist/es/motion/features/animations.mjs:2:37:
+      2 │ import { ExitAnimationFeature } from './animation/exit.mjs';
+        ╵                                      ~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../animators/waapi/animate-style.mjs"
+
+    node_modules/framer-motion/dist/es/animation/hooks/use-animate-style.mjs:4:41:
+      4 │ ...teScopedWaapiAnimate } from '../animators/waapi/animate-style.mjs';
+        ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/generators/utils/create-generator-easing.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:28:38:
+      28 │ ...ng } from './animation/generators/utils/create-generator-easing...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/can-use-native-timeline.mjs"
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs:2:37:
+      2 │ ... canUseNativeTimeline } from './utils/can-use-native-timeline.mjs';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/get-timeline.mjs"
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs:3:28:
+      3 │ import { getTimeline } from './utils/get-timeline.mjs';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./layout/MeasureLayout.mjs"
+
+    node_modules/framer-motion/dist/es/motion/features/drag.mjs:3:30:
+      3 │ import { MeasureLayout } from './layout/MeasureLayout.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./viewport/index.mjs"
+
+    node_modules/framer-motion/dist/es/motion/features/gestures.mjs:4:30:
+      4 │ import { InViewFeature } from './viewport/index.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/generators/utils/is-generator.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:29:28:
+      29 │ ...sGenerator } from './animation/generators/utils/is-generator.mjs';
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/get-timeline.mjs"
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-function.mjs:3:28:
+      3 │ import { getTimeline } from './utils/get-timeline.mjs';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./layout/MeasureLayout.mjs"
+
+    node_modules/framer-motion/dist/es/motion/features/layout.mjs:2:30:
+      2 │ import { MeasureLayout } from './layout/MeasureLayout.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./offsets/index.mjs"
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/on-scroll-handler.mjs:3:31:
+      3 │ import { resolveOffsets } from './offsets/index.mjs';
+        ╵                                ~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/calc-repeat-duration.mjs"
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:4:40:
+      4 │ ... calculateRepeatDuration } from './utils/calc-repeat-duration.mjs';
+        ╵                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/offset-to-range.mjs"
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs:4:42:
+      4 │ ...t { offsetToViewTimelineRange } from './utils/offset-to-range.mjs';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/constraints.mjs"
+
+    node_modules/framer-motion/dist/es/gestures/drag/VisualElementDragControls.mjs:8:154:
+      8 │ ...aints, calcOrigin, defaultElastic } from './utils/constraints.mjs';
+        ╵                                             ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/keyframes/offsets/default.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:32:30:
+      32 │ ... defaultOffset } from './animation/keyframes/offsets/default.mjs';
+         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/calc-time.mjs"
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:5:29:
+      5 │ import { calcNextTime } from './utils/calc-time.mjs';
+        ╵                              ~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/edit.mjs"
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:6:29:
+      6 │ import { addKeyframes } from './utils/edit.mjs';
+        ╵                              ~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/keyframes/offsets/fill.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:33:27:
+      33 │ export { fillOffset } from './animation/keyframes/offsets/fill.mjs';
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/keyframes/offsets/time.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:34:37:
+      34 │ ...vertOffsetToTimes } from './animation/keyframes/offsets/time.mjs';
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/normalize-times.mjs"
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:7:31:
+      7 │ import { normalizeTimes } from './utils/normalize-times.mjs';
+        ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/sort.mjs"
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:8:30:
+      8 │ import { compareByTime } from './utils/sort.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/keyframes/utils/apply-px-defaults.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:35:32:
+      35 │ ...faults } from './animation/keyframes/utils/apply-px-defaults.mjs';
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/keyframes/utils/fill-wildcards.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:36:30:
+      36 │ ...Wildcards } from './animation/keyframes/utils/fill-wildcards.mjs';
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/easing/cubic-bezier.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:37:36:
+      37 │ ...BezierAsString } from './animation/waapi/easing/cubic-bezier.mjs';
+         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/easing/is-supported.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:38:39:
+      38 │ ...upportedEasing } from './animation/waapi/easing/is-supported.mjs';
+         ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/easing/map-easing.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:39:40:
+      39 │ ...ngToNativeEasing } from './animation/waapi/easing/map-easing.mjs';
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/easing/supported.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:40:37:
+      40 │ ...portedWaapiEasing } from './animation/waapi/easing/supported.mjs';
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/supports/partial-keyframes.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:42:41:
+      42 │ ...yframes } from './animation/waapi/supports/partial-keyframes.mjs';
+         ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/supports/waapi.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:43:41:
+      43 │ ...rtsBrowserAnimation } from './animation/waapi/supports/waapi.mjs';
+         ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/utils/accelerated-values.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:44:34:
+      44 │ ...tedValues } from './animation/waapi/utils/accelerated-values.mjs';
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/utils/apply-generator.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:45:38:
+      45 │ ...ratorOptions } from './animation/waapi/utils/apply-generator.mjs';
+         ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./animation/waapi/utils/linear.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:46:37:
+      46 │ ... generateLinearEasing } from './animation/waapi/utils/linear.mjs';
+         ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./gestures/drag/state/is-active.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:54:41:
+      54 │ ...agActive, isDragging } from './gestures/drag/state/is-active.mjs';
+         ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./gestures/drag/state/set-active.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:55:28:
+      55 │ export { setDragLock } from './gestures/drag/state/set-active.mjs';
+         ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./gestures/press/utils/is-keyboard-accessible.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:58:64:
+      58 │ ...tInput } from './gestures/press/utils/is-keyboard-accessible.mjs';
+         ╵                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/color/index.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:93:22:
+      93 │ export { color } from './value/types/color/index.mjs';
+         ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/color/hex.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:94:20:
+      94 │ export { hex } from './value/types/color/hex.mjs';
+         ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/color/hsla.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:95:21:
+      95 │ export { hsla } from './value/types/color/hsla.mjs';
+         ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/color/hsla-to-rgba.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:96:27:
+      96 │ export { hslaToRgba } from './value/types/color/hsla-to-rgba.mjs';
+         ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/color/rgba.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:97:30:
+      97 │ export { rgbUnit, rgba } from './value/types/color/rgba.mjs';
+         ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/complex/index.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:98:45:
+      98 │ ...yseComplexValue, complex } from './value/types/complex/index.mjs';
+         ╵                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/maps/defaults.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:100:55:
+      100 │ ...es, getDefaultValueType } from './value/types/maps/defaults.mjs';
+          ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/maps/number.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:101:33:
+      101 │ export { numberValueTypes } from './value/types/maps/number.mjs';
+          ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/maps/transform.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:102:36:
+      102 │ ... { transformValueTypes } from './value/types/maps/transform.mjs';
+          ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/numbers/index.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:103:37:
+      103 │ ... { alpha, number, scale } from './value/types/numbers/index.mjs';
+          ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/numbers/units.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:104:65:
+      104 │ ...sPercentage, px, vh, vw } from './value/types/numbers/units.mjs';
+          ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/utils/animatable-none.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:106:34:
+      106 │ ...tAnimatableNone } from './value/types/utils/animatable-none.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/utils/find.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:107:30:
+      107 │ export { findValueType } from './value/types/utils/find.mjs';
+          ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./value/types/utils/get-as-type.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:108:31:
+      108 │ ...rt { getValueAsType } from './value/types/utils/get-as-type.mjs';
+          ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/object/ObjectVisualElement.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:118:36:
+      118 │ ...ctVisualElement } from './render/object/ObjectVisualElement.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/utils/reduced-motion/index.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:133:41:
+      133 │ ...rsReducedMotion } from './render/utils/reduced-motion/index.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/dom/utils/camel-to-dash.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:160:28:
+      160 │ export { camelToDash } from './render/dom/utils/camel-to-dash.mjs';
+          ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/html/utils/build-styles.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:161:32:
+      161 │ ... { buildHTMLStyles } from './render/html/utils/build-styles.mjs';
+          ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/html/utils/build-transform.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:162:31:
+      162 │ ... buildTransform } from './render/html/utils/build-transform.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/html/utils/render.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:163:27:
+      163 │ export { renderHTML } from './render/html/utils/render.mjs';
+          ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/html/utils/scrape-motion-values.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:164:79:
+      164 │ ...sFromProps } from './render/html/utils/scrape-motion-values.mjs';
+          ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/svg/utils/build-attrs.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:165:30:
+      165 │ export { buildSVGAttrs } from './render/svg/utils/build-attrs.mjs';
+          ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/svg/utils/camel-case-attrs.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:166:36:
+      166 │ ...lCaseAttributes } from './render/svg/utils/camel-case-attrs.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/svg/utils/is-svg-tag.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:167:25:
+      167 │ export { isSVGTag } from './render/svg/utils/is-svg-tag.mjs';
+          ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/svg/utils/path.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:168:29:
+      168 │ export { buildSVGPath } from './render/svg/utils/path.mjs';
+          ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/svg/utils/render.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:169:26:
+      169 │ export { renderSVG } from './render/svg/utils/render.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/svg/utils/scrape-motion-values.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:170:78:
+      170 │ ...esFromProps } from './render/svg/utils/scrape-motion-values.mjs';
+          ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./render/utils/reduced-motion/state.mjs"
+
+    node_modules/motion-dom/dist/es/index.mjs:175:63:
+      175 │ ...rsReducedMotion } from './render/utils/reduced-motion/state.mjs';
+          ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./easing/map-easing.mjs"
+
+    node_modules/motion-dom/dist/es/animation/waapi/start-waapi-animation.mjs:3:40:
+      3 │ import { mapEasingToNativeEasing } from './easing/map-easing.mjs';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../render/dom/utils/camel-to-dash.mjs"
+
+    node_modules/motion-dom/dist/es/effects/attr/index.mjs:1:28:
+      1 │ ...rt { camelToDash } from '../../render/dom/utils/camel-to-dash.mjs';
+        ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./drag/state/is-active.mjs"
+
+    node_modules/motion-dom/dist/es/gestures/hover.mjs:1:29:
+      1 │ import { isDragActive } from './drag/state/is-active.mjs';
+        ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../drag/state/is-active.mjs"
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:2:29:
+      2 │ import { isDragActive } from '../drag/state/is-active.mjs';
+        ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/numbers/units.mjs"
+
+    node_modules/motion-dom/dist/es/projection/animation/mix-values.mjs:2:28:
+      2 │ import { percent, px } from '../../value/types/numbers/units.mjs';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../value/types/maps/number.mjs"
+
+    node_modules/motion-dom/dist/es/effects/MotionValueState.mjs:2:33:
+      2 │ import { numberValueTypes } from '../value/types/maps/number.mjs';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./waapi/supports/waapi.mjs"
+
+    node_modules/motion-dom/dist/es/animation/AsyncMotionValueAnimation.mjs:10:41:
+      10 │ ...rt { supportsBrowserAnimation } from './waapi/supports/waapi.mjs';
+         ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./generators/utils/calc-duration.mjs"
+
+    node_modules/motion-dom/dist/es/animation/JSAnimation.mjs:8:38:
+      8 │ ...alcGeneratorDuration } from './generators/utils/calc-duration.mjs';
+        ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./waapi/utils/apply-generator.mjs"
+
+    node_modules/motion-dom/dist/es/animation/NativeAnimation.mjs:7:38:
+      7 │ ...{ applyGeneratorOptions } from './waapi/utils/apply-generator.mjs';
+        ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../render/dom/utils/camel-to-dash.mjs"
+
+    node_modules/motion-dom/dist/es/animation/optimized-appear/data-id.mjs:1:28:
+      1 │ ...rt { camelToDash } from '../../render/dom/utils/camel-to-dash.mjs';
+        ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./waapi/utils/unsupported-easing.mjs"
+
+    node_modules/motion-dom/dist/es/animation/NativeAnimationExtended.mjs:7:36:
+      7 │ ... replaceStringEasing } from './waapi/utils/unsupported-easing.mjs';
+        ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/fill-wildcards.mjs"
+
+    node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs:1:30:
+      1 │ import { fillWildcards } from './utils/fill-wildcards.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/unit-conversion.mjs"
+
+    node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs:2:48:
+      2 │ ...moveNonTranslationalTransform } from './utils/unit-conversion.mjs';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/complex/index.mjs"
+
+    node_modules/motion-dom/dist/es/projection/styles/scale-box-shadow.mjs:1:24:
+      1 │ import { complex } from '../../value/types/complex/index.mjs';
+        ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../value/types/utils/get-as-type.mjs"
+
+    node_modules/motion-dom/dist/es/effects/MotionValueState.mjs:3:31:
+      3 │ import { getValueAsType } from '../value/types/utils/get-as-type.mjs';
+        ╵                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/numbers/units.mjs"
+
+    node_modules/motion-dom/dist/es/projection/styles/scale-border-radius.mjs:1:19:
+      1 │ import { px } from '../../value/types/numbers/units.mjs';
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/maps/defaults.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:2:36:
+      2 │ ...{ getDefaultValueType } from '../../value/types/maps/defaults.mjs';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./numbers/index.mjs"
+
+    node_modules/motion-dom/dist/es/value/types/dimensions.mjs:2:23:
+      2 │ import { number } from './numbers/index.mjs';
+        ╵                        ~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/numbers/units.mjs"
+
+    node_modules/motion-dom/dist/es/projection/geometry/delta-remove.mjs:2:24:
+      2 │ import { percent } from '../../value/types/numbers/units.mjs';
+        ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/velocity.mjs"
+
+    node_modules/motion-dom/dist/es/animation/generators/inertia.mjs:2:37:
+      2 │ import { getGeneratorVelocity } from './utils/velocity.mjs';
+        ╵                                      ~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./generators/utils/velocity.mjs"
+
+    node_modules/motion-dom/dist/es/animation/JSAnimation.mjs:9:37:
+      9 │ ...rt { getGeneratorVelocity } from './generators/utils/velocity.mjs';
+        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/is-keyboard-accessible.mjs"
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:6:44:
+      6 │ ...mentKeyboardAccessible } from './utils/is-keyboard-accessible.mjs';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/build-styles.mjs"
+
+    node_modules/motion-dom/dist/es/render/html/HTMLVisualElement.mjs:6:32:
+      6 │ import { buildHTMLStyles } from './utils/build-styles.mjs';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/is-none.mjs"
+
+    node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs:6:23:
+      6 │ import { isNone } from './utils/is-none.mjs';
+        ╵                        ~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/color/hex.mjs"
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:2:20:
+      2 │ import { hex } from '../../value/types/color/hex.mjs';
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/color/index.mjs"
+
+    node_modules/motion-dom/dist/es/utils/mix/complex.mjs:3:22:
+      3 │ import { color } from '../../value/types/color/index.mjs';
+        ╵                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../waapi/utils/linear.mjs"
+
+    node_modules/motion-dom/dist/es/animation/generators/spring.mjs:2:37:
+      2 │ import { generateLinearEasing } from '../waapi/utils/linear.mjs';
+        ╵                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../keyframes/offsets/default.mjs"
+
+    node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs:3:30:
+      3 │ import { defaultOffset } from '../keyframes/offsets/default.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../animation/waapi/utils/accelerated-values.mjs"
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:4:34:
+      4 │ ...tedValues } from '../animation/waapi/utils/accelerated-values.mjs';
+        ╵                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../generators/utils/is-generator.mjs"
+
+    node_modules/motion-dom/dist/es/animation/utils/can-animate.mjs:2:28:
+      2 │ import { isGenerator } from '../generators/utils/is-generator.mjs';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../animation/waapi/easing/map-easing.mjs"
+
+    node_modules/motion-dom/dist/es/view/start.mjs:6:40:
+      6 │ ...ngToNativeEasing } from '../animation/waapi/easing/map-easing.mjs';
+        ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../dom/utils/camel-to-dash.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:5:28:
+      5 │ import { camelToDash } from '../dom/utils/camel-to-dash.mjs';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./numbers/units.mjs"
+
+    node_modules/motion-dom/dist/es/value/types/dimensions.mjs:3:45:
+      3 │ import { px, percent, degrees, vw, vh } from './numbers/units.mjs';
+        ╵                                              ~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/keyboard.mjs"
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:7:36:
+      7 │ import { enableKeyboardPress } from './utils/keyboard.mjs';
+        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/render.mjs"
+
+    node_modules/motion-dom/dist/es/render/html/HTMLVisualElement.mjs:7:27:
+      7 │ import { renderHTML } from './utils/render.mjs';
+        ╵                            ~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/make-none-animatable.mjs"
+
+    node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs:7:44:
+      7 │ ...eNoneKeyframesAnimatable } from './utils/make-none-animatable.mjs';
+        ╵                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/color/hsla.mjs"
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:3:21:
+      3 │ import { hsla } from '../../value/types/color/hsla.mjs';
+        ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/complex/index.mjs"
+
+    node_modules/motion-dom/dist/es/utils/mix/complex.mjs:4:45:
+      4 │ ..., analyseComplexValue } from '../../value/types/complex/index.mjs';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/calc-duration.mjs"
+
+    node_modules/motion-dom/dist/es/animation/generators/spring.mjs:3:60:
+      3 │ ...rDuration, maxGeneratorDuration } from './utils/calc-duration.mjs';
+        ╵                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../keyframes/offsets/time.mjs"
+
+    node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs:4:37:
+      4 │ import { convertOffsetToTimes } from '../keyframes/offsets/time.mjs';
+        ╵                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../value/types/complex/index.mjs"
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:9:24:
+      9 │ import { complex } from '../value/types/complex/index.mjs';
+        ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/complex/index.mjs"
+
+    node_modules/motion-dom/dist/es/animation/utils/is-animatable.mjs:1:24:
+      1 │ import { complex } from '../../value/types/complex/index.mjs';
+        ╵                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../animation/waapi/utils/apply-generator.mjs"
+
+    node_modules/motion-dom/dist/es/view/start.mjs:7:38:
+      7 │ ...ratorOptions } from '../animation/waapi/utils/apply-generator.mjs';
+        ╵                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/build-attrs.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:6:30:
+      6 │ import { buildSVGAttrs } from './utils/build-attrs.mjs';
+        ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/state.mjs"
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:8:27:
+      8 │ import { isPressing } from './utils/state.mjs';
+        ╵                            ~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/scrape-motion-values.mjs"
+
+    node_modules/motion-dom/dist/es/render/html/HTMLVisualElement.mjs:8:44:
+      8 │ ...apeMotionValuesFromProps } from './utils/scrape-motion-values.mjs';
+        ╵                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/unit-conversion.mjs"
+
+    node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs:8:48:
+      8 │ ...sitionalValues, isNumOrPxType } from './utils/unit-conversion.mjs';
+        ╵                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/color/hsla-to-rgba.mjs"
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:4:27:
+      4 │ import { hslaToRgba } from '../../value/types/color/hsla-to-rgba.mjs';
+        ╵                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/create-generator-easing.mjs"
+
+    node_modules/motion-dom/dist/es/animation/generators/spring.mjs:4:38:
+      4 │ ...createGeneratorEasing } from './utils/create-generator-easing.mjs';
+        ╵                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../value/types/utils/animatable-none.mjs"
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:10:34:
+      10 │ ...tAnimatableNone } from '../value/types/utils/animatable-none.mjs';
+         ╵                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/camel-case-attrs.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:7:36:
+      7 │ import { camelCaseAttributes } from './utils/camel-case-attrs.mjs';
+        ╵                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../../value/types/color/rgba.mjs"
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:5:21:
+      5 │ import { rgba } from '../../value/types/color/rgba.mjs';
+        ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "../value/types/utils/find.mjs"
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:11:30:
+      11 │ import { findValueType } from '../value/types/utils/find.mjs';
+         ╵                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/is-svg-tag.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:8:25:
+      8 │ import { isSVGTag } from './utils/is-svg-tag.mjs';
+        ╵                          ~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/render.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:9:26:
+      9 │ import { renderSVG } from './utils/render.mjs';
+        ╵                           ~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/reduced-motion/index.mjs"
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:17:41:
+      17 │ ...nitPrefersReducedMotion } from './utils/reduced-motion/index.mjs';
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/scrape-motion-values.mjs"
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:10:44:
+      10 │ ...peMotionValuesFromProps } from './utils/scrape-motion-values.mjs';
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+X [ERROR] Could not resolve "./utils/reduced-motion/state.mjs"
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:19:63:
+      19 │ ...r, prefersReducedMotion } from './utils/reduced-motion/state.mjs';
+         ╵                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+C:\Users\DELL\Downloads\ecole2-20260405T150143Z-1-001\ecoleformationjasmin\node_modules\esbuild\lib\main.js:1748
+  let error = new Error(text);
+              ^
+
+Error: [31mError during dependency optimization:
+
+[39m[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/optimized-appear/start.mjs"[0m
+
+    node_modules/framer-motion/dist/es/index.mjs:61:46:
+[37m      61 │ ...edAppearAnimation } from [32m'./animation/optimized-appear/start.mjs'[37m;
+         ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/animators/waapi/animate-style.mjs"[0m
+
+    node_modules/framer-motion/dist/es/index.mjs:74:28:
+[37m      74 │ ...nimateMini } from [32m'./animation/animators/waapi/animate-style.mjs'[37m;
+         ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/dom/viewport/index.mjs"[0m
+
+    node_modules/framer-motion/dist/es/index.mjs:76:23:
+[37m      76 │ export { inView } from [32m'./render/dom/viewport/index.mjs'[37m;
+         ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../animators/waapi/animate-style.mjs"[0m
+
+    node_modules/framer-motion/dist/es/animation/hooks/use-animate-style.mjs:4:41:
+[37m      4 │ ...teScopedWaapiAnimate } from [32m'../animators/waapi/animate-style.mjs'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/calc-repeat-duration.mjs"[0m
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:4:40:
+[37m      4 │ ... calculateRepeatDuration } from [32m'./utils/calc-repeat-duration.mjs'[37m;
+        ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/calc-time.mjs"[0m
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:5:29:
+[37m      5 │ import { calcNextTime } from [32m'./utils/calc-time.mjs'[37m;
+        ╵                              [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/edit.mjs"[0m
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:6:29:
+[37m      6 │ import { addKeyframes } from [32m'./utils/edit.mjs'[37m;
+        ╵                              [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/normalize-times.mjs"[0m
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:7:31:
+[37m      7 │ import { normalizeTimes } from [32m'./utils/normalize-times.mjs'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/sort.mjs"[0m
+
+    node_modules/framer-motion/dist/es/animation/sequence/create.mjs:8:30:
+[37m      8 │ import { compareByTime } from [32m'./utils/sort.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/constraints.mjs"[0m
+
+    node_modules/framer-motion/dist/es/gestures/drag/VisualElementDragControls.mjs:8:154:
+[37m      8 │ ...aints, calcOrigin, defaultElastic } from [32m'./utils/constraints.mjs'[37m;
+        ╵                                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/index.mjs"[0m
+
+    node_modules/framer-motion/dist/es/motion/features/animations.mjs:1:33:
+[37m      1 │ import { AnimationFeature } from [32m'./animation/index.mjs'[37m;
+        ╵                                  [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/exit.mjs"[0m
+
+    node_modules/framer-motion/dist/es/motion/features/animations.mjs:2:37:
+[37m      2 │ import { ExitAnimationFeature } from [32m'./animation/exit.mjs'[37m;
+        ╵                                      [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./layout/MeasureLayout.mjs"[0m
+
+    node_modules/framer-motion/dist/es/motion/features/drag.mjs:3:30:
+[37m      3 │ import { MeasureLayout } from [32m'./layout/MeasureLayout.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./viewport/index.mjs"[0m
+
+    node_modules/framer-motion/dist/es/motion/features/gestures.mjs:4:30:
+[37m      4 │ import { InViewFeature } from [32m'./viewport/index.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./layout/MeasureLayout.mjs"[0m
+
+    node_modules/framer-motion/dist/es/motion/features/layout.mjs:2:30:
+[37m      2 │ import { MeasureLayout } from [32m'./layout/MeasureLayout.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/can-use-native-timeline.mjs"[0m
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs:2:37:
+[37m      2 │ ... canUseNativeTimeline } from [32m'./utils/can-use-native-timeline.mjs'[37m;
+        ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/get-timeline.mjs"[0m
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs:3:28:
+[37m      3 │ import { getTimeline } from [32m'./utils/get-timeline.mjs'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/offset-to-range.mjs"[0m
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-animation.mjs:4:42:
+[37m      4 │ ...t { offsetToViewTimelineRange } from [32m'./utils/offset-to-range.mjs'[37m;
+        ╵                                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/get-timeline.mjs"[0m
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/attach-function.mjs:3:28:
+[37m      3 │ import { getTimeline } from [32m'./utils/get-timeline.mjs'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./offsets/index.mjs"[0m
+
+    node_modules/framer-motion/dist/es/render/dom/scroll/on-scroll-handler.mjs:3:31:
+[37m      3 │ import { resolveOffsets } from [32m'./offsets/index.mjs'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../render/dom/viewport/index.mjs"[0m
+
+    node_modules/framer-motion/dist/es/utils/use-in-view.mjs:3:23:
+[37m      3 │ import { inView } from [32m'../render/dom/viewport/index.mjs'[37m;
+        ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../render/dom/scroll/utils/offset-to-range.mjs"[0m
+
+    node_modules/framer-motion/dist/es/value/use-scroll.mjs:6:42:
+[37m      6 │ ...elineRange } from [32m'../render/dom/scroll/utils/offset-to-range.mjs'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./waapi/supports/waapi.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/AsyncMotionValueAnimation.mjs:10:41:
+[37m      10 │ ...rt { supportsBrowserAnimation } from [32m'./waapi/supports/waapi.mjs'[37m;
+         ╵                                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./generators/utils/calc-duration.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/JSAnimation.mjs:8:38:
+[37m      8 │ ...alcGeneratorDuration } from [32m'./generators/utils/calc-duration.mjs'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./generators/utils/velocity.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/JSAnimation.mjs:9:37:
+[37m      9 │ ...rt { getGeneratorVelocity } from [32m'./generators/utils/velocity.mjs'[37m;
+        ╵                                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./waapi/utils/apply-generator.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/NativeAnimation.mjs:7:38:
+[37m      7 │ ...{ applyGeneratorOptions } from [32m'./waapi/utils/apply-generator.mjs'[37m;
+        ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./waapi/utils/unsupported-easing.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/NativeAnimationExtended.mjs:7:36:
+[37m      7 │ ... replaceStringEasing } from [32m'./waapi/utils/unsupported-easing.mjs'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/velocity.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/generators/inertia.mjs:2:37:
+[37m      2 │ import { getGeneratorVelocity } from [32m'./utils/velocity.mjs'[37m;
+        ╵                                      [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../keyframes/offsets/default.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs:3:30:
+[37m      3 │ import { defaultOffset } from [32m'../keyframes/offsets/default.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../keyframes/offsets/time.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs:4:37:
+[37m      4 │ import { convertOffsetToTimes } from [32m'../keyframes/offsets/time.mjs'[37m;
+        ╵                                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../waapi/utils/linear.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/generators/spring.mjs:2:37:
+[37m      2 │ import { generateLinearEasing } from [32m'../waapi/utils/linear.mjs'[37m;
+        ╵                                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/calc-duration.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/generators/spring.mjs:3:60:
+[37m      3 │ ...rDuration, maxGeneratorDuration } from [32m'./utils/calc-duration.mjs'[37m;
+        ╵                                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/create-generator-easing.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/generators/spring.mjs:4:38:
+[37m      4 │ ...createGeneratorEasing } from [32m'./utils/create-generator-easing.mjs'[37m;
+        ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/is-none.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs:6:23:
+[37m      6 │ import { isNone } from [32m'./utils/is-none.mjs'[37m;
+        ╵                        [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/make-none-animatable.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs:7:44:
+[37m      7 │ ...eNoneKeyframesAnimatable } from [32m'./utils/make-none-animatable.mjs'[37m;
+        ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/unit-conversion.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs:8:48:
+[37m      8 │ ...sitionalValues, isNumOrPxType } from [32m'./utils/unit-conversion.mjs'[37m;
+        ╵                                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/fill-wildcards.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs:1:30:
+[37m      1 │ import { fillWildcards } from [32m'./utils/fill-wildcards.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/unit-conversion.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/keyframes/KeyframesResolver.mjs:2:48:
+[37m      2 │ ...moveNonTranslationalTransform } from [32m'./utils/unit-conversion.mjs'[37m;
+        ╵                                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../render/dom/utils/camel-to-dash.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/optimized-appear/data-id.mjs:1:28:
+[37m      1 │ ...rt { camelToDash } from [32m'../../render/dom/utils/camel-to-dash.mjs'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../generators/utils/is-generator.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/utils/can-animate.mjs:2:28:
+[37m      2 │ import { isGenerator } from [32m'../generators/utils/is-generator.mjs'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/complex/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/utils/is-animatable.mjs:1:24:
+[37m      1 │ import { complex } from [32m'../../value/types/complex/index.mjs'[37m;
+        ╵                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./easing/map-easing.mjs"[0m
+
+    node_modules/motion-dom/dist/es/animation/waapi/start-waapi-animation.mjs:3:40:
+[37m      3 │ import { mapEasingToNativeEasing } from [32m'./easing/map-easing.mjs'[37m;
+        ╵                                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../value/types/maps/number.mjs"[0m
+
+    node_modules/motion-dom/dist/es/effects/MotionValueState.mjs:2:33:
+[37m      2 │ import { numberValueTypes } from [32m'../value/types/maps/number.mjs'[37m;
+        ╵                                  [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../value/types/utils/get-as-type.mjs"[0m
+
+    node_modules/motion-dom/dist/es/effects/MotionValueState.mjs:3:31:
+[37m      3 │ import { getValueAsType } from [32m'../value/types/utils/get-as-type.mjs'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../render/dom/utils/camel-to-dash.mjs"[0m
+
+    node_modules/motion-dom/dist/es/effects/attr/index.mjs:1:28:
+[37m      1 │ ...rt { camelToDash } from [32m'../../render/dom/utils/camel-to-dash.mjs'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./drag/state/is-active.mjs"[0m
+
+    node_modules/motion-dom/dist/es/gestures/hover.mjs:1:29:
+[37m      1 │ import { isDragActive } from [32m'./drag/state/is-active.mjs'[37m;
+        ╵                              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../drag/state/is-active.mjs"[0m
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:2:29:
+[37m      2 │ import { isDragActive } from [32m'../drag/state/is-active.mjs'[37m;
+        ╵                              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/is-keyboard-accessible.mjs"[0m
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:6:44:
+[37m      6 │ ...mentKeyboardAccessible } from [32m'./utils/is-keyboard-accessible.mjs'[37m;
+        ╵                                  [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/keyboard.mjs"[0m
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:7:36:
+[37m      7 │ import { enableKeyboardPress } from [32m'./utils/keyboard.mjs'[37m;
+        ╵                                     [32m~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/state.mjs"[0m
+
+    node_modules/motion-dom/dist/es/gestures/press/index.mjs:8:27:
+[37m      8 │ import { isPressing } from [32m'./utils/state.mjs'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/generators/utils/calc-duration.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:27:60:
+[37m      27 │ ...rDuration } from [32m'./animation/generators/utils/calc-duration.mjs'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/generators/utils/create-generator-easing.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:28:38:
+[37m      28 │ ...ng } from [32m'./animation/generators/utils/create-generator-easing[37m...
+         ╵              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/generators/utils/is-generator.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:29:28:
+[37m      29 │ ...sGenerator } from [32m'./animation/generators/utils/is-generator.mjs'[37m;
+         ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/keyframes/offsets/default.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:32:30:
+[37m      32 │ ... defaultOffset } from [32m'./animation/keyframes/offsets/default.mjs'[37m;
+         ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/keyframes/offsets/fill.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:33:27:
+[37m      33 │ export { fillOffset } from [32m'./animation/keyframes/offsets/fill.mjs'[37m;
+         ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/keyframes/offsets/time.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:34:37:
+[37m      34 │ ...vertOffsetToTimes } from [32m'./animation/keyframes/offsets/time.mjs'[37m;
+         ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/keyframes/utils/apply-px-defaults.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:35:32:
+[37m      35 │ ...faults } from [32m'./animation/keyframes/utils/apply-px-defaults.mjs'[37m;
+         ╵                  [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/keyframes/utils/fill-wildcards.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:36:30:
+[37m      36 │ ...Wildcards } from [32m'./animation/keyframes/utils/fill-wildcards.mjs'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/easing/cubic-bezier.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:37:36:
+[37m      37 │ ...BezierAsString } from [32m'./animation/waapi/easing/cubic-bezier.mjs'[37m;
+         ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/easing/is-supported.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:38:39:
+[37m      38 │ ...upportedEasing } from [32m'./animation/waapi/easing/is-supported.mjs'[37m;
+         ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/easing/map-easing.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:39:40:
+[37m      39 │ ...ngToNativeEasing } from [32m'./animation/waapi/easing/map-easing.mjs'[37m;
+         ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/easing/supported.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:40:37:
+[37m      40 │ ...portedWaapiEasing } from [32m'./animation/waapi/easing/supported.mjs'[37m;
+         ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/supports/partial-keyframes.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:42:41:
+[37m      42 │ ...yframes } from [32m'./animation/waapi/supports/partial-keyframes.mjs'[37m;
+         ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/supports/waapi.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:43:41:
+[37m      43 │ ...rtsBrowserAnimation } from [32m'./animation/waapi/supports/waapi.mjs'[37m;
+         ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/utils/accelerated-values.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:44:34:
+[37m      44 │ ...tedValues } from [32m'./animation/waapi/utils/accelerated-values.mjs'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/utils/apply-generator.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:45:38:
+[37m      45 │ ...ratorOptions } from [32m'./animation/waapi/utils/apply-generator.mjs'[37m;
+         ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./animation/waapi/utils/linear.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:46:37:
+[37m      46 │ ... generateLinearEasing } from [32m'./animation/waapi/utils/linear.mjs'[37m;
+         ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./gestures/drag/state/is-active.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:54:41:
+[37m      54 │ ...agActive, isDragging } from [32m'./gestures/drag/state/is-active.mjs'[37m;
+         ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./gestures/drag/state/set-active.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:55:28:
+[37m      55 │ export { setDragLock } from [32m'./gestures/drag/state/set-active.mjs'[37m;
+         ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./gestures/press/utils/is-keyboard-accessible.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:58:64:
+[37m      58 │ ...tInput } from [32m'./gestures/press/utils/is-keyboard-accessible.mjs'[37m;
+         ╵                  [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/color/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:93:22:
+[37m      93 │ export { color } from [32m'./value/types/color/index.mjs'[37m;
+         ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/color/hex.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:94:20:
+[37m      94 │ export { hex } from [32m'./value/types/color/hex.mjs'[37m;
+         ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/color/hsla.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:95:21:
+[37m      95 │ export { hsla } from [32m'./value/types/color/hsla.mjs'[37m;
+         ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/color/hsla-to-rgba.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:96:27:
+[37m      96 │ export { hslaToRgba } from [32m'./value/types/color/hsla-to-rgba.mjs'[37m;
+         ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/color/rgba.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:97:30:
+[37m      97 │ export { rgbUnit, rgba } from [32m'./value/types/color/rgba.mjs'[37m;
+         ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/complex/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:98:45:
+[37m      98 │ ...yseComplexValue, complex } from [32m'./value/types/complex/index.mjs'[37m;
+         ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/maps/defaults.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:100:55:
+[37m      100 │ ...es, getDefaultValueType } from [32m'./value/types/maps/defaults.mjs'[37m;
+          ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/maps/number.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:101:33:
+[37m      101 │ export { numberValueTypes } from [32m'./value/types/maps/number.mjs'[37m;
+          ╵                                  [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/maps/transform.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:102:36:
+[37m      102 │ ... { transformValueTypes } from [32m'./value/types/maps/transform.mjs'[37m;
+          ╵                                  [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/numbers/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:103:37:
+[37m      103 │ ... { alpha, number, scale } from [32m'./value/types/numbers/index.mjs'[37m;
+          ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/numbers/units.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:104:65:
+[37m      104 │ ...sPercentage, px, vh, vw } from [32m'./value/types/numbers/units.mjs'[37m;
+          ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/utils/animatable-none.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:106:34:
+[37m      106 │ ...tAnimatableNone } from [32m'./value/types/utils/animatable-none.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/utils/find.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:107:30:
+[37m      107 │ export { findValueType } from [32m'./value/types/utils/find.mjs'[37m;
+          ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./value/types/utils/get-as-type.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:108:31:
+[37m      108 │ ...rt { getValueAsType } from [32m'./value/types/utils/get-as-type.mjs'[37m;
+          ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/object/ObjectVisualElement.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:118:36:
+[37m      118 │ ...ctVisualElement } from [32m'./render/object/ObjectVisualElement.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/utils/reduced-motion/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:133:41:
+[37m      133 │ ...rsReducedMotion } from [32m'./render/utils/reduced-motion/index.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/dom/utils/camel-to-dash.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:160:28:
+[37m      160 │ export { camelToDash } from [32m'./render/dom/utils/camel-to-dash.mjs'[37m;
+          ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/html/utils/build-styles.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:161:32:
+[37m      161 │ ... { buildHTMLStyles } from [32m'./render/html/utils/build-styles.mjs'[37m;
+          ╵                              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/html/utils/build-transform.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:162:31:
+[37m      162 │ ... buildTransform } from [32m'./render/html/utils/build-transform.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/html/utils/render.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:163:27:
+[37m      163 │ export { renderHTML } from [32m'./render/html/utils/render.mjs'[37m;
+          ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/html/utils/scrape-motion-values.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:164:79:
+[37m      164 │ ...sFromProps } from [32m'./render/html/utils/scrape-motion-values.mjs'[37m;
+          ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/svg/utils/build-attrs.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:165:30:
+[37m      165 │ export { buildSVGAttrs } from [32m'./render/svg/utils/build-attrs.mjs'[37m;
+          ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/svg/utils/camel-case-attrs.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:166:36:
+[37m      166 │ ...lCaseAttributes } from [32m'./render/svg/utils/camel-case-attrs.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/svg/utils/is-svg-tag.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:167:25:
+[37m      167 │ export { isSVGTag } from [32m'./render/svg/utils/is-svg-tag.mjs'[37m;
+          ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/svg/utils/path.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:168:29:
+[37m      168 │ export { buildSVGPath } from [32m'./render/svg/utils/path.mjs'[37m;
+          ╵                              [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/svg/utils/render.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:169:26:
+[37m      169 │ export { renderSVG } from [32m'./render/svg/utils/render.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/svg/utils/scrape-motion-values.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:170:78:
+[37m      170 │ ...esFromProps } from [32m'./render/svg/utils/scrape-motion-values.mjs'[37m;
+          ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./render/utils/reduced-motion/state.mjs"[0m
+
+    node_modules/motion-dom/dist/es/index.mjs:175:63:
+[37m      175 │ ...rsReducedMotion } from [32m'./render/utils/reduced-motion/state.mjs'[37m;
+          ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/numbers/units.mjs"[0m
+
+    node_modules/motion-dom/dist/es/projection/animation/mix-values.mjs:2:28:
+[37m      2 │ import { percent, px } from [32m'../../value/types/numbers/units.mjs'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/numbers/units.mjs"[0m
+
+    node_modules/motion-dom/dist/es/projection/geometry/delta-remove.mjs:2:24:
+[37m      2 │ import { percent } from [32m'../../value/types/numbers/units.mjs'[37m;
+        ╵                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/numbers/units.mjs"[0m
+
+    node_modules/motion-dom/dist/es/projection/styles/scale-border-radius.mjs:1:19:
+[37m      1 │ import { px } from [32m'../../value/types/numbers/units.mjs'[37m;
+        ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/complex/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/projection/styles/scale-box-shadow.mjs:1:24:
+[37m      1 │ import { complex } from [32m'../../value/types/complex/index.mjs'[37m;
+        ╵                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../animation/waapi/utils/accelerated-values.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:4:34:
+[37m      4 │ ...tedValues } from [32m'../animation/waapi/utils/accelerated-values.mjs'[37m;
+        ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../value/types/complex/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:9:24:
+[37m      9 │ import { complex } from [32m'../value/types/complex/index.mjs'[37m;
+        ╵                         [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../value/types/utils/animatable-none.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:10:34:
+[37m      10 │ ...tAnimatableNone } from [32m'../value/types/utils/animatable-none.mjs'[37m;
+         ╵                           [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../value/types/utils/find.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:11:30:
+[37m      11 │ import { findValueType } from [32m'../value/types/utils/find.mjs'[37m;
+         ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/reduced-motion/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:17:41:
+[37m      17 │ ...nitPrefersReducedMotion } from [32m'./utils/reduced-motion/index.mjs'[37m;
+         ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/reduced-motion/state.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/VisualElement.mjs:19:63:
+[37m      19 │ ...r, prefersReducedMotion } from [32m'./utils/reduced-motion/state.mjs'[37m;
+         ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/build-styles.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/html/HTMLVisualElement.mjs:6:32:
+[37m      6 │ import { buildHTMLStyles } from [32m'./utils/build-styles.mjs'[37m;
+        ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/render.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/html/HTMLVisualElement.mjs:7:27:
+[37m      7 │ import { renderHTML } from [32m'./utils/render.mjs'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/scrape-motion-values.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/html/HTMLVisualElement.mjs:8:44:
+[37m      8 │ ...apeMotionValuesFromProps } from [32m'./utils/scrape-motion-values.mjs'[37m;
+        ╵                                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/maps/defaults.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:2:36:
+[37m      2 │ ...{ getDefaultValueType } from [32m'../../value/types/maps/defaults.mjs'[37m;
+        ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../dom/utils/camel-to-dash.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:5:28:
+[37m      5 │ import { camelToDash } from [32m'../dom/utils/camel-to-dash.mjs'[37m;
+        ╵                             [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/build-attrs.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:6:30:
+[37m      6 │ import { buildSVGAttrs } from [32m'./utils/build-attrs.mjs'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/camel-case-attrs.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:7:36:
+[37m      7 │ import { camelCaseAttributes } from [32m'./utils/camel-case-attrs.mjs'[37m;
+        ╵                                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/is-svg-tag.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:8:25:
+[37m      8 │ import { isSVGTag } from [32m'./utils/is-svg-tag.mjs'[37m;
+        ╵                          [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/render.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:9:26:
+[37m      9 │ import { renderSVG } from [32m'./utils/render.mjs'[37m;
+        ╵                           [32m~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./utils/scrape-motion-values.mjs"[0m
+
+    node_modules/motion-dom/dist/es/render/svg/SVGVisualElement.mjs:10:44:
+[37m      10 │ ...peMotionValuesFromProps } from [32m'./utils/scrape-motion-values.mjs'[37m;
+         ╵                                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/color/hex.mjs"[0m
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:2:20:
+[37m      2 │ import { hex } from [32m'../../value/types/color/hex.mjs'[37m;
+        ╵                     [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/color/hsla.mjs"[0m
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:3:21:
+[37m      3 │ import { hsla } from [32m'../../value/types/color/hsla.mjs'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/color/hsla-to-rgba.mjs"[0m
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:4:27:
+[37m      4 │ import { hslaToRgba } from [32m'../../value/types/color/hsla-to-rgba.mjs'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/color/rgba.mjs"[0m
+
+    node_modules/motion-dom/dist/es/utils/mix/color.mjs:5:21:
+[37m      5 │ import { rgba } from [32m'../../value/types/color/rgba.mjs'[37m;
+        ╵                      [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/color/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/utils/mix/complex.mjs:3:22:
+[37m      3 │ import { color } from [32m'../../value/types/color/index.mjs'[37m;
+        ╵                       [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../../value/types/complex/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/utils/mix/complex.mjs:4:45:
+[37m      4 │ ..., analyseComplexValue } from [32m'../../value/types/complex/index.mjs'[37m;
+        ╵                                 [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./numbers/index.mjs"[0m
+
+    node_modules/motion-dom/dist/es/value/types/dimensions.mjs:2:23:
+[37m      2 │ import { number } from [32m'./numbers/index.mjs'[37m;
+        ╵                        [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./numbers/units.mjs"[0m
+
+    node_modules/motion-dom/dist/es/value/types/dimensions.mjs:3:45:
+[37m      3 │ import { px, percent, degrees, vw, vh } from [32m'./numbers/units.mjs'[37m;
+        ╵                                              [32m~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../animation/waapi/easing/map-easing.mjs"[0m
+
+    node_modules/motion-dom/dist/es/view/start.mjs:6:40:
+[37m      6 │ ...ngToNativeEasing } from [32m'../animation/waapi/easing/map-easing.mjs'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31mX [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "../animation/waapi/utils/apply-generator.mjs"[0m
+
+    node_modules/motion-dom/dist/es/view/start.mjs:7:38:
+[37m      7 │ ...ratorOptions } from [32m'../animation/waapi/utils/apply-generator.mjs'[37m;
+        ╵                        [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+    at failureErrorWithLog (C:\Users\DELL\Downloads\ecole2-20260405T150143Z-1-001\ecoleformationjasmin\node_modules\esbuild\lib\main.js:1748:15)
+    at C:\Users\DELL\Downloads\ecole2-20260405T150143Z-1-001\ecoleformationjasmin\node_modules\esbuild\lib\main.js:1207:25
+    at C:\Users\DELL\Downloads\ecole2-20260405T150143Z-1-001\ecoleformationjasmin\node_modules\esbuild\lib\main.js:1626:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  errors: [Getter/Setter],
+  warnings: [Getter/Setter]
+}
+
+Node.js v24.14.1

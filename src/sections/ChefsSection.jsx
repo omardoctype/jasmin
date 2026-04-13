@@ -6,16 +6,16 @@ import { chefs } from '../data/siteData';
 
 const chefOverrides = {
   'Chef Hassen Allagui': {
-    specialty: 'Patisserie fine',
-    bio: 'Transmet les fondamentaux de la patisserie fine avec une attention particuliere aux textures, aux finitions et a la regularite du geste.',
+    specialty: 'Patisserie',
+    bio: 'Il transmet les bases de la patisserie avec rigueur, precision et sens du detail.',
   },
   'Chef Khalil Arfi': {
-    specialty: 'Cuisine gastronomique',
-    bio: "Guide les etudiants en cuisine gastronomique autour de la precision technique, de l'organisation et du sens du detail en service.",
+    specialty: 'Cuisine',
+    bio: 'Il accompagne les etudiants dans leur progression en cuisine, avec une attention particuliere a lorganisation et a la qualite du travail.',
   },
   'Cheffe Manel Sallemi': {
-    specialty: 'Patisserie fine',
-    bio: 'Cheffe en patisserie fine, elle accompagne les etudiants avec exigence, elegance et sensibilite dans la maitrise des creations sucrees.',
+    specialty: 'Formation pratique',
+    bio: 'Elle accompagne les etudiants avec exigence et bienveillance tout au long de leur formation.',
   },
 };
 
@@ -29,8 +29,8 @@ export default function ChefsSection() {
         <SectionHeading
           eyebrow="Chefs formateurs"
           eyebrowLogo={schoolLogo}
-          title="Des profils experimentes au service de votre progression"
-          description="Une equipe qui transmet autant la technique que la discipline, le sens du detail et les standards du monde professionnel."
+          title="Des chefs formateurs au service de votre progression"
+          description="Notre equipe transmet les bons gestes, les methodes de travail et les exigences du metier."
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -38,6 +38,7 @@ export default function ChefsSection() {
             <Reveal
               key={chef.name}
               delay={index * 0.06}
+              variant={index % 2 === 0 ? 'fade-up' : 'zoom-in'}
             >
               <ChefCard
                 {...chef}

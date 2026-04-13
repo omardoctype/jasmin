@@ -14,10 +14,10 @@ export default function CTASection() {
                   Admission
                 </span>
                 <h2 className="font-display text-4xl leading-none text-white sm:text-5xl">
-                  Prêt à commencer votre carrière culinaire ?
+                  Pret a commencer votre formation ?
                 </h2>
                 <p className="max-w-2xl text-base leading-8 text-white/74 sm:text-lg">
-                  Rejoignez une école qui valorise autant le geste, l’exigence que la progression humaine des futurs professionnels.
+                  Rejoignez une ecole serieuse pour apprendre la cuisine et la patisserie.
                 </p>
               </div>
 
@@ -26,7 +26,7 @@ export default function CTASection() {
                 variant="ghost"
                 className="shrink-0"
               >
-                S’inscrire maintenant
+                S inscrire maintenant
               </ButtonLink>
             </div>
           </div>
@@ -35,4 +35,3 @@ export default function CTASection() {
     </section>
   );
 }
-

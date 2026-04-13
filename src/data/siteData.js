@@ -2,58 +2,56 @@ import aboutAtelier from '../assets/about-atelier.svg';
 import brandMark from '../assets/logo.png';
 import chefHassen from '../assets/chefs/Hassen ALLAGUI.jpg';
 import chefKhalil from '../assets/chefs/Khalil ARFI.jpg';
-import chefManel from '../assets/chefs/Manel SALLEMI.jpg';
+import chefManel from '../assets/chefs/mme manel2.jpg';
 import eventPlaceholder from '../assets/event-placeholder.svg';
 import heroVisual from '../assets/hero-visual.svg';
 import mapPlaceholder from '../assets/map-placeholder.svg';
 
 export const brand = {
-  name: 'École Jasmin',
-  subtitle: 'Centre de Formation Professionnelle',
+  name: 'Ecole Jasmin',
+  subtitle: 'Centre de formation professionnelle',
   mark: brandMark,
 };
 
 export const contactDetails = {
-  phone: '52 694 594',
+  phone: '+216 23 061 414',
   email: 'ecole.jasmin2012@gmail.com',
-  address: 'Route de Tunis km 6, Sakiet Ezzit, Sfax, Tunisia',
+  address: 'Route de Tunis km 6, Sakiet Ezzit, Sfax, Tunisie',
   mapUrl:
-    'https://www.google.com/maps/search/?api=1&query=Route+de+Tunis+km+6+Sakiet+Ezzit+Sfax+Tunisia',
+    'https://www.google.com/maps/search/?api=1&query=Route+de+Tunis+km+6+Sakiet+Ezzit+Sfax+Tunisie',
 };
 
 export const navigation = [
   { label: 'Accueil', href: '#accueil' },
-  { label: 'Formation de base', href: '#formation-base' },
-  { label: 'Formation accélérée', href: '#formation-acceleree' },
-  { label: 'L’école', href: '#ecole' },
-  { label: 'Étudiant étranger', href: '#etudiant-etranger' },
-  { label: 'Évènements', href: '#evenements' },
-  { label: 'Actualités', href: '#actualites' },
+  { label: 'Formations', href: '#formations' },
+  { label: "L'ecole", href: '#ecole' },
   { label: 'Chefs', href: '#chefs' },
+  { label: 'Evenements', href: '#evenements' },
+  { label: 'Contact', href: '#contact' },
 ];
 
 export const heroContent = {
   image: heroVisual,
-  eyebrow: 'Cuisine • Pâtisserie • Diplôme d’État',
-  title: 'Devenez un Chef Professionnel en Cuisine & Pâtisserie',
-  subtitle: "Formation professionnelle certifiée et reconnue par l'État",
+  eyebrow: 'Cuisine - Patisserie - Formation reconnue',
+  title: 'Formez-vous aux metiers de la cuisine et de la patisserie',
+  subtitle: "Une formation professionnelle claire, serieuse et reconnue par l'Etat",
   highlights: [
-    'Cuisine d’application premium',
+    'Formation pratique',
     'Encadrement par des chefs formateurs',
-    'Immersion orientée métier',
+    'Preparation a la vie professionnelle',
   ],
 };
 
 export const aboutContent = {
   image: aboutAtelier,
   text:
-    'مركز التكوين المهني الياسمين / JASMIN هو مؤسسة تكوينية تقدم برامج احترافية في الطبخ و المرطبات، مع شهادات معترف بها من طرف الدولة.',
+    "Ecole Jasmin est un centre de formation professionnelle en cuisine et en patisserie. Nous proposons des parcours structures avec des diplomes reconnus par l'Etat.",
   description:
-    'Un environnement exigeant et chaleureux pour apprendre les fondamentaux de la cuisine, de la pâtisserie et du service avec une approche résolument professionnelle.',
+    "Les etudiants evoluent dans un cadre moderne, accueillant et axe sur la pratique.",
   stats: [
-    { value: 500, prefix: '+', label: 'étudiants accompagnés' },
-    { value: 10, prefix: '+', label: 'formateurs experts' },
-    { label: 'Formation reconnue', detail: "Parcours certifié et encadré par l'État" },
+    { value: 500, prefix: '+', label: 'etudiants formes' },
+    { value: 10, prefix: '+', label: 'formateurs qualifies' },
+    { label: 'Formation reconnue', detail: "Parcours encadre et reconnu par l'Etat" },
   ],
 };
 
@@ -62,45 +60,45 @@ export const programHighlights = [
     id: 'formation-base',
     title: 'Formation de base',
     description:
-      'Un socle complet pour maîtriser les techniques essentielles, l’organisation en laboratoire et les gestes professionnels.',
+      'Une formation pour maitriser les bases de la cuisine, de la patisserie et du travail en atelier.',
   },
   {
     id: 'formation-acceleree',
-    title: 'Formation accélérée',
+    title: 'Formation acceleree',
     description:
-      'Un format intensif pensé pour progresser vite, consolider la pratique et préparer une insertion rapide sur le marché.',
+      'Un rythme intensif pour progresser plus vite et acceder plus rapidement au monde professionnel.',
   },
 ];
 
 export const formations = [
   {
-    title: 'شهادة المؤهل التقني المهني في الطبخ',
+    title: 'BTP Cuisine',
     description:
-      'Programme structuré pour apprendre la cuisine professionnelle, l’organisation de brigade et les bases de la gastronomie moderne.',
+      'Une formation pour apprendre la cuisine professionnelle, les techniques essentielles et lorganisation en cuisine.',
     icon: 'chefHat',
   },
   {
-    title: 'شهادة المؤهل التقني المهني في المرطبات',
+    title: 'BTP Patisserie',
     description:
-      'Parcours premium dédié aux techniques de pâtisserie, au dressage raffiné et à la précision des productions sucrées.',
+      'Un parcours pour apprendre les bases de la patisserie, les desserts et les finitions professionnelles.',
     icon: 'award',
   },
   {
-    title: 'شهادة الكفاءة المهنية في الطبخ و المرطبات',
+    title: 'CAP Cuisine et Patisserie',
     description:
-      'Une formation polyvalente pour développer une vraie double compétence en cuisine et en pâtisserie.',
+      'Une formation polyvalente pour apprendre la cuisine et la patisserie dans un meme parcours.',
     icon: 'badge',
   },
   {
-    title: 'شهادة المهارة في الطبخ',
+    title: 'CC Cuisine',
     description:
-      'Parcours orienté pratique métier pour gagner en autonomie sur les bases culinaires, la cuisson et le dressage.',
+      'Un programme pratique pour apprendre les gestes essentiels du metier en cuisine.',
     icon: 'book',
   },
   {
-    title: 'شهادة المهارة في المرطبات',
+    title: 'CC Patisserie',
     description:
-      'Un format accessible pour perfectionner les préparations sucrées, les textures, les finitions et la régularité.',
+      'Une formation pratique pour acquerir de bonnes bases en patisserie.',
     icon: 'sparkles',
   },
 ];
@@ -108,22 +106,22 @@ export const formations = [
 export const chefs = [
   {
     name: 'Chef Hassen Allagui',
-    specialty: 'Pâtisserie fine',
-    bio: 'Accompagne les étudiants sur la précision technique, la maîtrise des sauces et le sens du détail en service.',
+    specialty: 'Patisserie',
+    bio: 'Il accompagne les etudiants dans lapprentissage des bases, de la precision technique et de lorganisation du travail.',
     image: chefHassen,
     imagePosition: 'center 18%',
   },
   {
     name: 'Chef Khalil Arfi',
-    specialty: 'Cuisine gastronomique',
-    bio: 'Spécialiste des entremets, viennoiseries et finitions premium avec une pédagogie très axée sur le geste juste.',
+    specialty: 'Cuisine',
+    bio: 'Il accompagne les etudiants dans la pratique, la rigueur professionnelle et le travail en cuisine.',
     image: chefKhalil,
     imagePosition: 'center 14%',
   },
   {
     name: 'Cheffe Manel Sallemi',
-    specialty: 'Cuisine d’application',
-    bio: 'Met l’accent sur le rythme réel du laboratoire, l’organisation et les standards attendus en environnement pro.',
+    specialty: 'Formation pratique',
+    bio: 'Elle accompagne les etudiants avec attention afin de soutenir leur progression tout au long de la formation.',
     image: chefManel,
     imagePosition: 'center 12%',
   },
@@ -131,91 +129,91 @@ export const chefs = [
 
 export const events = [
   {
-    title: 'Graduation Day',
+    title: 'Journee de remise des diplomes',
     date: 'Juin 2026',
     description:
-      'Une célébration élégante des promotions diplômées avec remise des certificats et présentation des meilleures réalisations.',
+      'Une journee pour celebrer la fin de formation et remettre les diplomes aux etudiants.',
     image: eventPlaceholder,
   },
   {
-    title: 'Dîner gastronomique',
+    title: 'Diner gastronomique',
     date: 'Octobre 2026',
     description:
-      'Une soirée immersive où les étudiants composent et servent un menu signature devant familles, invités et professionnels.',
+      'Un evenement pendant lequel les etudiants prepareront et serviront un menu complet.',
     image: eventPlaceholder,
   },
   {
-    title: 'Masterclass',
-    date: 'Toute l’année',
+    title: 'Atelier masterclass',
+    date: "Toute l'annee",
     description:
-      'Des sessions ciblées autour des techniques de pointe, du dressage contemporain et de la pâtisserie de prestige.',
+      'Des ateliers speciaux pour approfondir les techniques en cuisine et en patisserie.',
     image: eventPlaceholder,
   },
 ];
 
 export const newsItems = [
   {
-    title: 'Ouverture des inscriptions 2026',
-    excerpt: 'Les nouvelles sessions en cuisine et pâtisserie sont désormais ouvertes pour les admissions.',
+    title: 'Inscriptions 2026 ouvertes',
+    excerpt: 'Les inscriptions en cuisine et en patisserie sont maintenant ouvertes.',
   },
   {
     title: 'Nouveaux ateliers pratiques',
-    excerpt: 'Des formats plus immersifs pour renforcer la cadence, la précision et la confiance en situation réelle.',
+    excerpt: 'De nouveaux ateliers ont ete ajoutes pour renforcer la pratique sur le terrain.',
   },
   {
-    title: 'Accompagnement étudiant étranger',
-    excerpt: "Un parcours d’accueil dédié pour préparer l’arrivée, l’intégration et le démarrage de la formation.",
+    title: 'Accueil des etudiants etrangers',
+    excerpt: "L'ecole accompagne aussi les etudiants etrangers dans la preparation de leur arrivee.",
   },
 ];
 
 export const faqItems = [
   {
-    question: 'Diplômes proposés ?',
+    question: 'Quels diplomes sont proposes ?',
     answer:
-      'L’école propose des parcours en cuisine et en pâtisserie allant des certificats de compétence jusqu’aux formations qualifiantes reconnues.',
+      "L'ecole propose plusieurs formations en cuisine et en patisserie, avec differents niveaux de diplome.",
   },
   {
-    question: 'Conditions d’inscription ?',
+    question: "Quelles sont les conditions d'inscription ?",
     answer:
-      'Les inscriptions se font sur dossier avec échange d’orientation. L’équipe vous accompagne pour choisir le parcours le plus adapté.',
+      "L'inscription se fait sur dossier. L'equipe vous accompagne pour choisir la formation la plus adaptee.",
   },
   {
-    question: 'Localisation ?',
+    question: "Ou se trouve l'ecole ?",
     answer:
-      'Le centre est situé Route de Tunis km 6, Sakiet Ezzit, à Sfax, avec un accès direct pour les étudiants locaux et internationaux.',
+      "L'ecole est situee Route de Tunis km 6, Sakiet Ezzit, a Sfax en Tunisie.",
   },
   {
-    question: 'Types de formation ?',
+    question: 'Quels types de formation sont disponibles ?',
     answer:
-      'Vous pouvez rejoindre des formations de base, accélérées, professionnalisantes et des ateliers de perfectionnement tout au long de l’année.',
+      'Vous pouvez choisir une formation de base, une formation acceleree ou des ateliers pratiques selon votre objectif.',
   },
 ];
 
 export const studentSupport = [
-  'Accompagnement administratif avant l’arrivée',
-  'Orientation personnalisée vers le bon rythme de formation',
-  'Suivi dédié pour une intégration fluide au centre',
+  "Aide avant l'arrivee",
+  'Orientation selon votre niveau',
+  "Suivi simple pour bien commencer la formation",
 ];
 
 export const sponsors = [
   {
     name: 'Maison Gourmet',
-    category: 'Partenaire premium',
+    category: 'Partenaire',
     icon: 'award',
   },
   {
-    name: 'Atelier Café',
+    name: 'Atelier Cafe',
     category: 'Fournisseur',
     icon: 'coffee',
   },
   {
     name: 'Croissant Signature',
-    category: 'Pâtisserie',
+    category: 'Patisserie',
     icon: 'croissant',
   },
   {
     name: 'Cuisine Prestige',
-    category: 'Équipement',
+    category: 'Equipement',
     icon: 'utensils',
   },
   {
@@ -224,7 +222,7 @@ export const sponsors = [
     icon: 'soup',
   },
   {
-    name: 'Marché Sélect',
+    name: 'Marche Select',
     category: 'Distribution',
     icon: 'store',
   },
@@ -233,7 +231,7 @@ export const sponsors = [
 export const footerLinks = [
   { label: 'Formations', href: '#formations' },
   { label: 'Chefs', href: '#chefs' },
-  { label: 'Évènements', href: '#evenements' },
+  { label: 'Evenements', href: '#evenements' },
   { label: 'Contact', href: '#contact' },
 ];
 
