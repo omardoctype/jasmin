@@ -13,6 +13,8 @@ export default function ChefCard({
             src={image}
             alt={name}
             loading="lazy"
+            decoding="async"
+            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
             className="h-[22rem] w-full object-cover transition-transform duration-500 ease-out hover:scale-[1.03] sm:h-[24rem] lg:h-[26rem]"
             style={{ objectPosition: imagePosition }}
           />

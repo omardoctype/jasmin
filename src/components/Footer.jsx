@@ -4,9 +4,9 @@ import { brand, contactDetails } from '../data/siteData';
 const quickLinks = [
   { label: 'Accueil', href: '#accueil' },
   { label: 'Formations', href: '#formations' },
-  { label: "L'ecole", href: '#ecole' },
+  { label: "L'école", href: '#ecole' },
   { label: 'Chefs', href: '#chefs' },
-  { label: 'Nos sponsors', href: '#sponsors' },
+  { label: 'Nos partenaires', href: '#sponsors' },
   { label: 'Contact', href: '#contact' },
 ];
 
@@ -21,7 +21,7 @@ export default function Footer() {
           >
             <img
               src={brand.mark}
-              alt="Logo Ecole Jasmin"
+              alt="Logo École Jasmin"
               className="h-14 w-14 rounded-2xl object-cover shadow-[0_18px_34px_-24px_rgba(74,58,42,0.42)]"
             />
             <div>
@@ -31,7 +31,7 @@ export default function Footer() {
           </a>
 
           <p className="max-w-xl text-sm leading-8 text-jasmin-dark/72">
-            Un centre de formation en cuisine et en patisserie pour apprendre un vrai metier.
+            Un centre de formation en cuisine et en pâtisserie pour apprendre un vrai métier.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
 
         <div className="space-y-4">
           <h3 className="text-sm font-semibold uppercase tracking-[0.22em] text-jasmin-brown">
-            Coordonnees
+            Coordonnées
           </h3>
           <div className="grid gap-4">
             <a
@@ -75,7 +75,7 @@ export default function Footer() {
                 className="rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4 transition-transform duration-300 hover:-translate-y-1"
               >
                 <Phone className="h-5 w-5 text-jasmin-gold" />
-                <p className="mt-3 text-sm font-semibold text-jasmin-dark">Telephone</p>
+                <p className="mt-3 text-sm font-semibold text-jasmin-dark">Téléphone</p>
                 <p className="mt-1 text-sm text-jasmin-dark/70">{contactDetails.phone}</p>
               </a>
 
@@ -93,7 +93,7 @@ export default function Footer() {
       </div>
 
       <div className="site-container mt-12 border-t border-jasmin-brown/10 pt-6 text-sm text-jasmin-dark/58">
-        © 2026 Ecole Jasmin - Centre de formation professionnelle. Tous droits reserves.
+        © 2026 École Jasmin - Centre de formation professionnelle. Tous droits réservés.
       </div>
     </footer>
   );

@@ -38,7 +38,7 @@ export default function FormationDetailPage({ slug }) {
                   Formation introuvable
                 </p>
                 <h1 className="mt-4 font-display text-4xl text-jasmin-dark sm:text-5xl">
-                  Cette specialite n'existe pas.
+                  Cette spécialité n'existe pas.
                 </h1>
                 <a
                   href="#formations"
@@ -54,6 +54,9 @@ export default function FormationDetailPage({ slug }) {
       </main>
     );
   }
+
+  const detailImageFitClass = formation.imageFit === 'contain' ? 'object-contain p-4 sm:p-5' : 'object-cover';
+  const detailImageHeightClass = formation.imageFit === 'contain' ? 'h-[22rem] sm:h-[28rem]' : 'h-[18rem] sm:h-[24rem]';
 
   return (
     <main className="pt-28 sm:pt-32">
@@ -72,11 +75,11 @@ export default function FormationDetailPage({ slug }) {
               <div className="inline-flex items-center gap-3 rounded-full border border-jasmin-brown/12 bg-white/78 px-3 py-2 shadow-[0_12px_30px_-24px_rgba(74,58,42,0.38)]">
                 <img
                   src={schoolLogo}
-                  alt="Logo Ecole Jasmin"
+                  alt="Logo École Jasmin"
                   className="h-7 w-7 rounded-full object-cover"
                 />
                 <span className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-jasmin-brown">
-                  Ecole Jasmin
+                  École Jasmin
                 </span>
               </div>
 
@@ -96,7 +99,7 @@ export default function FormationDetailPage({ slug }) {
                 <img
                   src={formation.image}
                   alt={formation.label}
-                  className="h-[18rem] w-full object-cover sm:h-[24rem]"
+                  className={`w-full bg-[#e9ddcb] transform-gpu ${detailImageHeightClass} ${detailImageFitClass} ${formation.imageBlurClass ?? 'blur-0'} ${formation.imageScaleClass ?? 'scale-100'}`}
                   style={{ objectPosition: formation.imagePosition }}
                 />
               </div>
@@ -114,7 +117,7 @@ export default function FormationDetailPage({ slug }) {
                     </div>
                     <div className="space-y-2">
                       <p className="text-xs font-semibold uppercase tracking-[0.22em] text-jasmin-brown">
-                        Duree
+                        Durée
                       </p>
                       <p className="text-sm leading-7 text-jasmin-dark/74">{formation.duration}</p>
                     </div>
@@ -142,7 +145,7 @@ export default function FormationDetailPage({ slug }) {
                     </div>
                     <div className="space-y-2">
                       <p className="text-xs font-semibold uppercase tracking-[0.22em] text-jasmin-brown">
-                        Specialite
+                        Spécialité
                       </p>
                       <p className="text-sm leading-7 text-jasmin-dark/74">{formation.family}</p>
                     </div>
@@ -164,7 +167,7 @@ export default function FormationDetailPage({ slug }) {
               variant="fade-left"
             >
               <ModuleList
-                title="Modules theoriques"
+                title="Modules théoriques"
                 items={formation.modulesRight}
               />
             </Reveal>

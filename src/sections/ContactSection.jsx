@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
 import schoolLogo from '../assets/logo.png';
 import { contactDetails } from '../data/siteData';
+import { submitContactForm } from '../lib/contactApi';
 
 const initialState = {
   name: '',
@@ -15,14 +16,17 @@ const initialState = {
 export default function ContactSection() {
   const [formData, setFormData] = useState(initialState);
   const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setError('');
+    setSuccessMessage('');
     setFormData((current) => ({ ...current, [name]: value }));
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const trimmedData = {
@@ -33,15 +37,23 @@ export default function ContactSection() {
     };
 
     if (!trimmedData.name || !trimmedData.email || !trimmedData.phone || !trimmedData.message) {
-      setError('Veuillez remplir tous les champs avant denvoyer votre message.');
+      setError("Veuillez remplir tous les champs avant d'envoyer votre message.");
       return;
     }
 
-    const whatsappMessage = encodeURIComponent(
-      `Bonjour, je vous contacte depuis le site de l ecole.\n\nNom: ${trimmedData.name}\nEmail: ${trimmedData.email}\nTelephone: ${trimmedData.phone}\nMessage: ${trimmedData.message}`,
-    );
+    try {
+      setIsSubmitting(true);
+      setError('');
+      setSuccessMessage('');
 
-    window.open(`https://wa.me/21623061414?text=${whatsappMessage}`, '_blank');
+      const response = await submitContactForm(trimmedData);
+      setSuccessMessage(response.message || 'Votre demande a été envoyée avec succès.');
+      setFormData(initialState);
+    } catch (submissionError) {
+      setError(submissionError.message || "Une erreur s'est produite lors de l'envoi.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -53,8 +65,8 @@ export default function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           eyebrowLogo={schoolLogo}
-          title="Contactez notre equipe"
-          description="Ecrivez-nous pour obtenir des informations, preparer votre inscription ou organiser une visite du centre."
+          title="Contactez notre équipe"
+          description="Écrivez-nous pour obtenir des informations, préparer votre inscription ou organiser une visite du centre."
         />
 
         <div className="grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
@@ -62,7 +74,7 @@ export default function ContactSection() {
             <div className="surface-card overflow-hidden p-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2467742473423!2d10.75735701132729!3d34.799732877779604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d3a472360ef3%3A0x8fb51b76828bd55f!2sCentre%20Jasmin%20pour%20la%20Formation%20en%20P%C3%A2tisserie%20et%20en%20cuisine!5e0!3m2!1sfr!2stn!4v1775411867203!5m2!1sfr!2stn"
-                title="Localisation Ecole Jasmin"
+                title="Localisation École Jasmin"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="h-72 w-full rounded-[24px]"
@@ -87,7 +99,7 @@ export default function ContactSection() {
                     className="hover-glow rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4"
                   >
                     <Phone className="h-5 w-5 text-jasmin-gold" />
-                    <p className="mt-4 text-sm font-semibold text-jasmin-dark">Telephone</p>
+                    <p className="mt-4 text-sm font-semibold text-jasmin-dark">Téléphone</p>
                     <p className="mt-2 text-sm text-jasmin-dark/70">{contactDetails.phone}</p>
                   </a>
 
@@ -114,10 +126,10 @@ export default function ContactSection() {
                   Formulaire
                 </p>
                 <h3 className="font-display text-4xl leading-none text-jasmin-dark">
-                  Envoyer votre demande
+                  Faites le premier pas
                 </h3>
                 <p className="max-w-2xl text-sm leading-7 text-jasmin-dark/70">
-                  Votre message sera prepare automatiquement dans WhatsApp pour un contact simple et rapide.
+                  Notre équipe vous contactera rapidement.
                 </p>
               </div>
 
@@ -154,7 +166,7 @@ export default function ContactSection() {
                 </div>
 
                 <label className="grid gap-2">
-                  <span className="text-sm font-medium text-jasmin-dark">Telephone</span>
+                  <span className="text-sm font-medium text-jasmin-dark">Téléphone</span>
                   <input
                     required
                     type="tel"
@@ -175,7 +187,7 @@ export default function ContactSection() {
                     value={formData.message}
                     onChange={handleChange}
                     className="rounded-[24px] border border-jasmin-brown/12 bg-white/78 px-4 py-4 text-sm text-jasmin-dark placeholder:text-jasmin-dark/34"
-                    placeholder="Precisez votre demande ou la formation qui vous interesse."
+                    placeholder="Précisez votre demande ou la formation qui vous intéresse."
                   />
                 </label>
 
@@ -185,15 +197,22 @@ export default function ContactSection() {
                   </p>
                 ) : null}
 
+                {successMessage ? (
+                  <p className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
+                    {successMessage}
+                  </p>
+                ) : null}
+
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm leading-7 text-jasmin-dark/62">
-                    Reponse rapide par WhatsApp.
+                    Votre demande sera envoyée automatiquement à notre équipe.
                   </p>
                   <button
                     type="submit"
+                    disabled={isSubmitting}
                     className="inline-flex items-center justify-center rounded-full border border-jasmin-dark bg-jasmin-dark px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 hover:-translate-y-1"
                   >
-                    Envoyer la demande
+                    {isSubmitting ? 'Envoi en cours...' : 'Envoyer la demande'}
                   </button>
                 </div>
               </form>

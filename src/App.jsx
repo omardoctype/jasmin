@@ -1,9 +1,11 @@
 import { useEffect, useMemo, useState } from 'react';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import ScrollProgress from './components/ScrollProgress';
 import AboutSection from './sections/AboutSection';
 import ContactSection from './sections/ContactSection';
 import FormationsSection from './sections/FormationsSection';
+import GallerySection from './sections/GallerySection';
 import HeroSection from './sections/HeroSection';
 import ChefsSection from './sections/ChefsSection';
 import SponsorsSection from './sections/SponsorsSection';
@@ -60,6 +62,7 @@ function App() {
 
   return (
     <div className="relative overflow-x-clip">
+      <ScrollProgress />
       <div className="absolute inset-x-0 top-0 -z-10 h-[44rem] bg-[radial-gradient(circle_at_top_right,rgba(183,154,107,0.18),transparent_46%),radial-gradient(circle_at_top_left,rgba(216,199,166,0.36),transparent_40%)]" />
 
       <header className="relative z-30">
@@ -74,6 +77,7 @@ function App() {
           <AboutSection />
           <FormationsSection />
           <ChefsSection />
+          <GallerySection />
           <SponsorsSection />
           <ContactSection />
         </main>

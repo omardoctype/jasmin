@@ -1,14 +1,31 @@
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { Award, ChefHat } from 'lucide-react';
-import brandMark from '../assets/logo.png';
-import heroImage from '../assets/image.jpg';
+import { useEffect, useRef, useState } from 'react';
+import slide1 from '../assets/1.jpg';
+import slide2 from '../assets/2.jpg';
+import slide3 from '../assets/3.jpg';
+import slide5 from '../assets/5.jpg';
+import slide6 from '../assets/6.jpg';
+import slide7 from '../assets/7.jpg';
+import slide8 from '../assets/8.jpg';
+import slide9 from '../assets/9.jpg';
 import patisserieSlideOne from '../assets/pat1.JPG';
 import patisserieSlideTwo from '../assets/pat2.JPG';
 import patisserieSlideThree from '../assets/pat3.JPG';
 import patisserieSlideFour from '../assets/pat4.JPG';
-import schoolLogo from '../assets/logo.png';
 import Reveal from '../components/Reveal';
+import TextReveal from '../components/TextReveal';
+
+const photoSlides = [
+  { src: slide1, alt: 'Photo Ecole Jasmin 1' },
+  { src: slide2, alt: 'Photo Ecole Jasmin 2' },
+  { src: slide3, alt: 'Photo Ecole Jasmin 3' },
+  { src: slide5, alt: 'Photo Ecole Jasmin 5' },
+  { src: slide6, alt: 'Photo Ecole Jasmin 6' },
+  { src: slide7, alt: 'Photo Ecole Jasmin 7' },
+  { src: slide8, alt: 'Photo Ecole Jasmin 8' },
+  { src: slide9, alt: 'Photo Ecole Jasmin 9' },
+];
 
 const patisserieSlides = [
   { src: patisserieSlideOne, alt: 'Atelier de patisserie Ecole Jasmin 1' },
@@ -20,6 +37,46 @@ const patisserieSlides = [
 export default function HeroSection() {
   const reduceMotion = useReducedMotion();
   const [activeSlide, setActiveSlide] = useState(0);
+  const [activeCardSlide, setActiveCardSlide] = useState(0);
+  const heroRef = useRef(null);
+  const cardSliderRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ['start start', 'end start'],
+  });
+  const { scrollYProgress: cardScrollProgress } = useScroll({
+    target: cardSliderRef,
+    offset: ['start end', 'end start'],
+  });
+
+  const mediaY = useTransform(scrollYProgress, [0, 1], [0, 110]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [1, 0.72]);
+  const cardSliderY = useTransform(cardScrollProgress, [0, 1], [34, -18]);
+
+  useEffect(() => {
+    [...photoSlides, ...patisserieSlides].forEach((slide) => {
+      const image = new Image();
+      image.src = slide.src;
+    });
+  }, []);
+
+  useEffect(() => {
+    if (reduceMotion) {
+      return undefined;
+    }
+
+    const isMobile = window.innerWidth < 768;
+    if (isMobile) {
+      return undefined;
+    }
+
+    const intervalId = window.setInterval(() => {
+      setActiveSlide((current) => (current + 1) % photoSlides.length);
+    }, 3600);
+
+    return () => window.clearInterval(intervalId);
+  }, [reduceMotion]);
 
   useEffect(() => {
     if (reduceMotion) {
@@ -27,8 +84,8 @@ export default function HeroSection() {
     }
 
     const intervalId = window.setInterval(() => {
-      setActiveSlide((current) => (current + 1) % patisserieSlides.length);
-    }, 2600);
+      setActiveCardSlide((current) => (current + 1) % patisserieSlides.length);
+    }, 3400);
 
     return () => window.clearInterval(intervalId);
   }, [reduceMotion]);
@@ -36,25 +93,37 @@ export default function HeroSection() {
   return (
     <section
       id="accueil"
+      ref={heroRef}
       className="relative overflow-hidden"
     >
-      <div className="relative min-h-[78svh] sm:min-h-[84svh]">
+      <div className="relative min-h-[62svh] sm:min-h-[84svh]">
         <motion.img
-          src={heroImage}
-          alt="Presentation culinaire Ecole Jasmin"
-          className="absolute inset-0 h-full w-full object-cover object-[center_78%] sm:object-[center_68%] lg:object-[center_58%]"
-          initial={reduceMotion ? false : { scale: 1.08 }}
-          animate={reduceMotion ? undefined : { scale: 1 }}
-          transition={reduceMotion ? undefined : { duration: 1.6, ease: [0.22, 1, 0.36, 1] }}
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(26,26,26,0.56),rgba(26,26,26,0.24)_42%,rgba(26,26,26,0.1))]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(237,230,218,0.22),transparent_28%)]" />
-        <motion.div
+          src={photoSlides[activeSlide].src}
+          alt=""
           aria-hidden="true"
-          className="absolute left-[8%] top-[18%] hidden h-28 w-28 rounded-full border border-white/14 bg-white/8 backdrop-blur-sm lg:block"
-          animate={reduceMotion ? undefined : { y: [0, -16, 0], rotate: [0, 4, 0] }}
-          transition={reduceMotion ? undefined : { duration: 9, repeat: Infinity, ease: 'easeInOut' }}
+          className="absolute inset-0 h-full w-full object-cover object-[center_28%] sm:object-center lg:object-[center_58%]"
+          style={{ y: reduceMotion ? 0 : mediaY }}
         />
+        <AnimatePresence mode="sync" initial={false}>
+          <motion.img
+            key={photoSlides[activeSlide].src}
+            src={photoSlides[activeSlide].src}
+            alt={photoSlides[activeSlide].alt}
+            className="absolute inset-0 h-full w-full object-cover object-[center_28%] sm:object-center lg:object-[center_58%]"
+            loading={activeSlide === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+            style={{ willChange: 'opacity, transform, filter', y: reduceMotion ? 0 : mediaY }}
+            initial={reduceMotion ? false : { opacity: 0, scale: 1.02, filter: 'brightness(1.02)' }}
+            animate={reduceMotion ? { opacity: 1 } : { opacity: 1, scale: 1, filter: 'brightness(1)' }}
+            exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.015, filter: 'brightness(0.98)' }}
+            transition={reduceMotion ? { duration: 0.2 } : { duration: 1.1, ease: 'easeInOut' }}
+          />
+        </AnimatePresence>
+        <motion.div
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(26,26,26,0.64),rgba(26,26,26,0.34)_46%,rgba(26,26,26,0.16))] sm:bg-[linear-gradient(90deg,rgba(26,26,26,0.56),rgba(26,26,26,0.24)_42%,rgba(26,26,26,0.1))]"
+          style={{ opacity: reduceMotion ? 1 : overlayOpacity }}
+        />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(237,230,218,0.22),transparent_28%)]" />
         <motion.div
           aria-hidden="true"
           className="absolute bottom-[20%] right-[8%] hidden h-20 w-20 rounded-[28px] border border-jasmin-gold/20 bg-jasmin-gold/10 lg:block"
@@ -62,52 +131,43 @@ export default function HeroSection() {
           transition={reduceMotion ? undefined : { duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
         />
 
-        <div className="site-container relative z-10 flex min-h-[78svh] items-end pb-24 pt-36 sm:min-h-[84svh] sm:pb-28 lg:pb-32">
+        <div className="site-container relative z-10 flex min-h-[62svh] items-end pb-12 pt-24 sm:min-h-[84svh] sm:pb-28 sm:pt-36 lg:pb-32">
           <Reveal
             className="max-w-3xl"
             variant="fade-right"
           >
-            <div className="space-y-6">
-              <motion.div
-                className="section-tag border-white/18 bg-white/10 text-white"
-                initial={reduceMotion ? false : { opacity: 0, y: 18 }}
-                animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
-                transition={reduceMotion ? undefined : { delay: 0.12, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-              >
-                Ecole Jasmin
-              </motion.div>
-
+            <div className="max-w-[18rem] space-y-4 sm:max-w-3xl sm:space-y-6">
               <div className="space-y-4">
-                <motion.h1
-                  className="font-display text-5xl leading-[0.95] text-white sm:text-6xl lg:text-7xl"
-                  initial={reduceMotion ? false : { opacity: 0, y: 26 }}
-                  animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
-                  transition={reduceMotion ? undefined : { delay: 0.18, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                >
-                  Ecole de formation professionnelle en cuisine et patisserie
-                </motion.h1>
+                <motion.h3
+  className="text-white text-2xl sm:text-3xl lg:text-4xl font-display leading-snug relative z-10"
+  initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
+  animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+  transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+>
+  L'excellence culinaire commence ici
+</motion.h3>
                 <motion.p
-                  className="max-w-2xl text-base leading-8 text-white/82 sm:text-lg"
+                  className="max-w-[16rem] text-sm leading-6 text-white/84 sm:max-w-2xl sm:text-lg sm:leading-8"
                   initial={reduceMotion ? false : { opacity: 0, y: 20 }}
                   animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                   transition={reduceMotion ? undefined : { delay: 0.3, duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  Une formation professionnelle pour apprendre la cuisine et la patisserie dans un cadre serieux et moderne.
+                  Transformez votre passion en metier grace a une formation pratique et adaptee au monde du travail.
                 </motion.p>
               </div>
 
               <motion.div
-                className="flex flex-wrap gap-3 pt-2"
+                className="flex flex-wrap gap-3 pt-1 sm:pt-2"
                 initial={reduceMotion ? false : { opacity: 0, y: 20 }}
                 animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                 transition={reduceMotion ? undefined : { delay: 0.42, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
               >
-                <div className="rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white/88">
-                  Cuisine professionnelle
-                </div>
-                <div className="rounded-full border border-white/16 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white/88">
-                  Patisserie fine
-                </div>
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-jasmin-dark shadow-[0_18px_44px_-26px_rgba(255,255,255,0.65)] transition-transform duration-300 hover:-translate-y-0.5 hover:bg-jasmin-cream sm:px-6 sm:py-3"
+                >
+                  S'inscrire
+                </a>
               </motion.div>
             </div>
           </Reveal>
@@ -119,19 +179,24 @@ export default function HeroSection() {
       <div className="relative -mt-3 sm:-mt-6">
         <div className="site-container">
           <Reveal variant="zoom-in">
-            <div className="mx-auto grid max-w-5xl gap-8 rounded-[30px] border border-jasmin-brown/10 bg-white px-6 py-8 shadow-[0_26px_80px_-44px_rgba(74,58,42,0.42)] sm:px-8 sm:py-10 lg:grid-cols-[1fr_0.94fr] lg:px-12">
+            <motion.div
+              ref={cardSliderRef}
+              className="mx-auto grid max-w-5xl gap-8 rounded-[30px] border border-jasmin-brown/10 bg-white px-6 py-8 shadow-[0_26px_80px_-44px_rgba(74,58,42,0.42)] sm:px-8 sm:py-10 lg:grid-cols-[1fr_0.94fr] lg:px-12"
+              style={{ y: reduceMotion ? 0 : cardSliderY }}
+            >
               <div className="relative min-h-[20rem] overflow-hidden rounded-[28px] bg-[#e8ddcb]">
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="sync" initial={false}>
                   <motion.img
-                    key={patisserieSlides[activeSlide].src}
-                    src={patisserieSlides[activeSlide].src}
-                    alt={patisserieSlides[activeSlide].alt}
+                    key={patisserieSlides[activeCardSlide].src}
+                    src={patisserieSlides[activeCardSlide].src}
+                    alt={patisserieSlides[activeCardSlide].alt}
                     loading="lazy"
                     className="absolute inset-0 h-full w-full object-cover"
-                    initial={reduceMotion ? false : { opacity: 0, scale: 1.04 }}
-                    animate={reduceMotion ? { opacity: 1 } : { opacity: 1, scale: 1 }}
-                    exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 0.985 }}
-                    transition={{ duration: reduceMotion ? 0.2 : 0.9, ease: [0.22, 1, 0.36, 1] }}
+                    style={{ willChange: 'opacity, transform, filter' }}
+                    initial={reduceMotion ? false : { opacity: 0, scale: 1.035, filter: 'brightness(1.03)' }}
+                    animate={reduceMotion ? { opacity: 1 } : { opacity: 1, scale: 1, filter: 'brightness(1)' }}
+                    exit={reduceMotion ? { opacity: 0 } : { opacity: 0, scale: 1.02, filter: 'brightness(0.98)' }}
+                    transition={{ duration: reduceMotion ? 0.2 : 1, ease: 'easeInOut' }}
                   />
                 </AnimatePresence>
 
@@ -144,9 +209,9 @@ export default function HeroSection() {
                       type="button"
                       aria-label={`Afficher l'image ${index + 1}`}
                       className={`h-2.5 rounded-full transition-all duration-300 ${
-                        index === activeSlide ? 'w-8 bg-white' : 'w-2.5 bg-white/50'
+                        index === activeCardSlide ? 'w-8 bg-white' : 'w-2.5 bg-white/50'
                       }`}
-                      onClick={() => setActiveSlide(index)}
+                      onClick={() => setActiveCardSlide(index)}
                     />
                   ))}
                 </div>
@@ -157,11 +222,8 @@ export default function HeroSection() {
                   Ecole Jasmin
                 </p>
                 <h2 className="max-w-2xl font-display text-3xl leading-tight text-jasmin-dark sm:text-4xl">
-                  Un centre de formation axe sur la pratique et la qualite de l apprentissage.
+                  Un espace moderne et bien equipe
                 </h2>
-                <p className="max-w-2xl text-sm leading-8 text-jasmin-dark/72 sm:text-base">
-                  Les etudiants apprennent les techniques essentielles, pratiquent en atelier et se preparent a une insertion professionnelle solide.
-                </p>
 
                 <div className="relative space-y-6 pt-2">
                   <div className="hover-glow flex gap-4 rounded-[24px] border border-jasmin-brown/10 bg-[#fcfbf8] p-5">
@@ -170,7 +232,7 @@ export default function HeroSection() {
                     </div>
                     <div className="space-y-2">
                       <h4 className="text-lg font-semibold text-jasmin-dark">
-                        Un accompagnement pedagogique attentif
+                        Un accompagnement attentif
                       </h4>
                       <p className="text-sm leading-7 text-jasmin-dark/70">
                         Une equipe pedagogique accompagne chaque etudiant avec serieux, methode et regularite.
@@ -184,39 +246,19 @@ export default function HeroSection() {
                     </div>
                     <div className="space-y-2">
                       <h4 className="text-lg font-semibold text-jasmin-dark">
-                        Une formation pratique et structuree
+                        Qualite et pratique
                       </h4>
                       <p className="text-sm leading-7 text-jasmin-dark/70">
-                        La cuisine, la patisserie et le travail en atelier permettent de developper des competences concretes pour le metier.
+                        Une formation construite autour de la qualite de l'apprentissage, de la pratique en
+                        atelier et de l'exigence professionnelle.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </Reveal>
         </div>
-      </div>
-
-      <div className="site-container pt-18 sm:pt-22">
-        <Reveal variant="fade-up">
-          <div className="mx-auto max-w-4xl text-center">
-            <div className="inline-flex items-center gap-3 rounded-full border border-jasmin-brown/10 bg-white px-4 py-2 shadow-[0_14px_34px_-26px_rgba(74,58,42,0.28)]">
-              <img
-                src={schoolLogo}
-                alt="Logo Ecole Jasmin"
-                className="h-6 w-6 rounded-full object-cover"
-              />
-              <span className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-jasmin-brown">
-                Ecole Jasmin
-              </span>
-            </div>
-
-            <h2 className="mt-6 font-display text-4xl leading-tight text-jasmin-dark sm:text-5xl">
-              Des formations claires en cuisine et en patisserie.
-            </h2>
-          </div>
-        </Reveal>
       </div>
     </section>
   );

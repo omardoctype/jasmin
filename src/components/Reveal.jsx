@@ -15,7 +15,7 @@ export default function Reveal({
   y = 18,
   variant = 'fade-up',
   once = true,
-  amount = 0.08,
+  amount = 0.12,
 }) {
   const reduceMotion = useReducedMotion();
 
@@ -43,9 +43,8 @@ export default function Reveal({
       className={className}
       initial={initial}
       whileInView={inView}
-      whileHover={variant === 'zoom-in' ? { y: -4 } : undefined}
-      viewport={{ once, amount, margin: '0px 0px 12% 0px' }}
-      transition={{ duration: 0.42, delay, ease: [0.22, 1, 0.36, 1] }}
+      viewport={{ once, amount, margin: '0px 0px 8% 0px' }}
+      transition={{ duration: 0.34, delay, ease: [0.22, 1, 0.36, 1] }}
     >
       {children}
     </motion.div>

@@ -14,10 +14,10 @@ export default function CTASection() {
                   Admission
                 </span>
                 <h2 className="font-display text-4xl leading-none text-white sm:text-5xl">
-                  Pret a commencer votre formation ?
+                  Prêt à commencer votre formation ?
                 </h2>
                 <p className="max-w-2xl text-base leading-8 text-white/74 sm:text-lg">
-                  Rejoignez une ecole serieuse pour apprendre la cuisine et la patisserie.
+                  Rejoignez une école sérieuse pour apprendre la cuisine et la pâtisserie.
                 </p>
               </div>
 
@@ -26,7 +26,7 @@ export default function CTASection() {
                 variant="ghost"
                 className="shrink-0"
               >
-                S inscrire maintenant
+                S'inscrire maintenant
               </ButtonLink>
             </div>
           </div>
