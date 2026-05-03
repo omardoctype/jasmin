@@ -6,6 +6,14 @@ import chefManel from '../assets/chefs/mme manel2.jpg';
 import eventPlaceholder from '../assets/event-placeholder.svg';
 import heroVisual from '../assets/hero-visual.svg';
 import mapPlaceholder from '../assets/map-placeholder.svg';
+import gourmandiseSponsor from '../assets/sponseurs/gourmandise.jpg';
+import majesteSponsor from '../assets/sponseurs/Logo Majesté version finale.png';
+import giasSponsor from '../assets/sponseurs/png logo gias.png';
+import propatissSponsor from '../assets/sponseurs/propatiss.png';
+import telechargerSponsor from '../assets/sponseurs/télécharger.png';
+import waybaSponsor from '../assets/sponseurs/wayba.png';
+import raddisonSponsor from '../assets/sponseurs/raddison.png';
+import imagesSponsor from '../assets/sponseurs/images.jpeg';
 
 export const brand = {
   name: 'École Jasmin',
@@ -202,19 +210,44 @@ export const studentSupport = [
 
 export const sponsors = [
   {
-    name: 'Radisson',
-    category: 'Partenaire',
-    icon: 'award',
+    name: 'Gourmandise',
+    image: gourmandiseSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[140px] lg:max-w-[200px]',
   },
   {
-    name: 'Gourmandise',
-    category: 'Fournisseur',
-    icon: 'coffee',
+    name: 'Logo Majesté',
+    image: majesteSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[150px] lg:max-w-[220px]',
+  },
+  {
+    name: 'GIAS',
+    image: giasSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[140px] lg:max-w-[200px]',
+  },
+  {
+    name: 'Propatiss',
+    image: propatissSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[150px] lg:max-w-[210px]',
+  },
+  {
+    name: 'Télécharger sponsor',
+    image: telechargerSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[140px] lg:max-w-[190px]',
   },
   {
     name: 'Wayba',
-    category: 'Partenaire',
-    icon: 'croissant',
+    image: waybaSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[130px] lg:max-w-[180px]',
+  },
+  {
+    name: 'Raddison',
+    image: raddisonSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[145px] lg:max-w-[205px]',
+  },
+  {
+    name: 'Images sponsor',
+    image: imagesSponsor,
+    imageClassName: 'max-h-12 sm:max-h-14 lg:max-h-[84px] xl:max-h-[92px] max-w-[130px] lg:max-w-[180px]',
   },
 ];
 
@@ -228,5 +261,3 @@ export const footerLinks = [
 export const imagery = {
   map: mapPlaceholder,
 };
-
-
