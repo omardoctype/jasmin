@@ -37,12 +37,12 @@ export default function ContactSection() {
       message: formData.message.trim(),
     };
 
-    if (!trimmedData.fullName || !trimmedData.email || !trimmedData.phone || !trimmedData.message) {
-      setError("Veuillez remplir tous les champs avant d'envoyer votre message.");
+    if (!trimmedData.fullName || !trimmedData.phone) {
+      setError('Veuillez renseigner votre nom et votre téléphone.');
       return;
     }
 
-    if (!emailPattern.test(trimmedData.email)) {
+    if (trimmedData.email && !emailPattern.test(trimmedData.email)) {
       setError('Veuillez saisir une adresse email valide.');
       return;
     }
@@ -153,7 +153,10 @@ export default function ContactSection() {
               >
                 <div className="grid gap-5 sm:grid-cols-2">
                   <label className="grid gap-2">
-                    <span className="text-sm font-medium text-jasmin-dark">Nom</span>
+                    <span className="text-sm font-medium text-jasmin-dark">
+                      Nom
+                      <span className="ml-1 text-xs text-red-500">*</span>
+                    </span>
                     <input
                       required
                       type="text"
@@ -168,7 +171,6 @@ export default function ContactSection() {
                   <label className="grid gap-2">
                     <span className="text-sm font-medium text-jasmin-dark">Email</span>
                     <input
-                      required
                       type="email"
                       name="email"
                       value={formData.email}
@@ -180,7 +182,10 @@ export default function ContactSection() {
                 </div>
 
                 <label className="grid gap-2">
-                  <span className="text-sm font-medium text-jasmin-dark">TÃ©lÃ©phone</span>
+                  <span className="text-sm font-medium text-jasmin-dark">
+                    TÃ©lÃ©phone
+                    <span className="ml-1 text-xs text-red-500">*</span>
+                  </span>
                   <input
                     required
                     type="tel"
@@ -195,7 +200,6 @@ export default function ContactSection() {
                 <label className="grid gap-2">
                   <span className="text-sm font-medium text-jasmin-dark">Message</span>
                   <textarea
-                    required
                     name="message"
                     rows="6"
                     value={formData.message}

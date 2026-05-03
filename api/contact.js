@@ -24,13 +24,7 @@ function validatePayload(payload) {
   if (!payload.phone) {
     return 'phone is required.';
   }
-  if (!payload.email) {
-    return 'email is required.';
-  }
-  if (!payload.message) {
-    return 'message is required.';
-  }
-  if (!EMAIL_PATTERN.test(payload.email)) {
+  if (payload.email && !EMAIL_PATTERN.test(payload.email)) {
     return 'email is invalid.';
   }
   if (!PHONE_PATTERN.test(payload.phone)) {
@@ -41,15 +35,18 @@ function validatePayload(payload) {
 }
 
 function buildWhatsAppMessage({ fullName, phone, email, message }) {
+  const displayedEmail = email || 'Non renseigné';
+  const displayedMessage = message || 'Non renseigné';
+
   return [
     '\u{1F4E9} Nouveau message depuis le site',
     '',
     `\u{1F464} Nom: ${fullName}`,
     `\u{1F4DE} Téléphone: ${phone}`,
-    `\u{1F4E7} Email: ${email}`,
+    `\u{1F4E7} Email: ${displayedEmail}`,
     '',
     '\u{1F4AC} Message:',
-    message,
+    displayedMessage,
   ].join('\n');
 }
 
