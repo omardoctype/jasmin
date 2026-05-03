@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: light;
+  --color-beige: #ede6da;
+  --color-sand: #d8c7a6;
+  --color-gold: #b79a6b;
+  --color-brown: #8c6f4a;
+  --color-dark-brown: #4a3a2a;
+  --color-ink: #1a1a1a;
+  --color-ivory: #f7f5f0;
+}
+
+@theme inline {
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+  --color-jasmin-beige: var(--color-beige);
+  --color-jasmin-sand: var(--color-sand);
+  --color-jasmin-gold: var(--color-gold);
+  --color-jasmin-brown: var(--color-brown);
+  --color-jasmin-dark: var(--color-dark-brown);
+  --color-jasmin-ink: var(--color-ink);
+  --color-jasmin-ivory: var(--color-ivory);
+}
+
+@layer base {
+  * {
+    border-color: rgba(140, 111, 74, 0.14);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scrollbar-color: rgba(183, 154, 107, 0.9) rgba(237, 230, 218, 0.8);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+
+  body {
+    @apply min-h-screen bg-jasmin-ivory font-sans text-jasmin-ink antialiased;
+    background-image:
+      radial-gradient(circle at top, rgba(216, 199, 166, 0.28), transparent 38%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.88), rgba(247, 245, 240, 0.96));
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.4), transparent 18%, transparent 82%, rgba(255,255,255,0.3)),
+      radial-gradient(circle at center, transparent 60%, rgba(247,245,240,0.15));
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(237, 230, 218, 0.9);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(216, 199, 166, 0.95), rgba(140, 111, 74, 0.85));
+    border-radius: 999px;
+  }
+
+  a,
+  button,
+  input,
+  textarea {
+    @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-jasmin-gold/45 focus-visible:ring-offset-2 focus-visible:ring-offset-white;
+  }
+
+  img {
+    @apply block max-w-full;
+    height: auto;
+  }
+
+  ::selection {
+    background: rgba(183, 154, 107, 0.24);
+    color: var(--color-ink);
+  }
+}
+
+@layer components {
+  .site-container {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-shell {
+    @apply relative py-20 sm:py-24 lg:py-28;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 960px;
+  }
+
+  .surface-card {
+    @apply rounded-[28px] border border-jasmin-brown/12 bg-white/72 shadow-[0_24px_80px_-48px_rgba(74,58,42,0.42)] backdrop-blur-[6px] transition-[transform,box-shadow,border-color,background-color] duration-300 ease-out;
+  }
+
+  .soft-panel {
+    @apply rounded-[24px] border border-white/60 bg-white/74 shadow-[0_20px_70px_-45px_rgba(74,58,42,0.48)];
+  }
+
+  .section-tag {
+    @apply inline-flex items-center gap-2 rounded-full border border-jasmin-gold/22 bg-white/72 px-4 py-2 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-jasmin-brown;
+  }
+
+  .ambient-grid {
+    background-image:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(255, 255, 255, 0)),
+      linear-gradient(rgba(183, 154, 107, 0.08) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(183, 154, 107, 0.08) 1px, transparent 1px);
+    background-position: 0 0, 0 0, 0 0;
+    background-size: 100% 100%, 38px 38px, 38px 38px;
+  }
+
+  .hover-lift {
+    @apply transition-[transform,box-shadow,border-color] duration-300 ease-out hover:-translate-y-[4px] hover:shadow-[0_24px_72px_-44px_rgba(74,58,42,0.34)];
+  }
+
+  .hover-glow {
+    @apply transition-[transform,box-shadow,background-color,border-color] duration-300 ease-out hover:-translate-y-[3px] hover:border-jasmin-gold/22 hover:bg-white hover:shadow-[0_20px_60px_-40px_rgba(183,154,107,0.22)];
+  }
+
+  .section-cinematic::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: -3rem;
+    height: 7rem;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(247,245,240,0), rgba(255,255,255,0.7) 56%, rgba(247,245,240,0));
+    opacity: 0.8;
+  }
+
+  @media (max-width: 767px) {
+    .section-shell {
+      contain-intrinsic-size: 1px 720px;
+    }
+  }
+}

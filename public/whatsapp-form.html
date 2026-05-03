@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp Form Demo</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f7f5f0;
+        color: #1a1a1a;
+      }
+
+      .container {
+        max-width: 640px;
+        margin: 48px auto;
+        padding: 24px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 20px 50px -35px rgba(74, 58, 42, 0.35);
+      }
+
+      form {
+        display: grid;
+        gap: 16px;
+      }
+
+      label {
+        display: grid;
+        gap: 8px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      input,
+      textarea,
+      button {
+        font: inherit;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #d8c7a6;
+        border-radius: 14px;
+        box-sizing: border-box;
+      }
+
+      button {
+        border: 0;
+        border-radius: 999px;
+        padding: 14px 20px;
+        background: #1a1a1a;
+        color: white;
+        cursor: pointer;
+      }
+
+      .message {
+        padding: 12px 14px;
+        border-radius: 14px;
+        font-size: 14px;
+      }
+
+      .error {
+        background: #fef2f2;
+        color: #b91c1c;
+      }
+
+      .success {
+        background: #ecfdf5;
+        color: #047857;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>WhatsApp Contact Form</h1>
+      <p>Simple HTML example that posts to <code>/submit-form</code>.</p>
+
+      <form id="contact-form">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <div id="feedback"></div>
+
+        <button type="submit">Send form</button>
+      </form>
+    </div>
+
+    <script>
+      const form = document.getElementById('contact-form');
+      const feedback = document.getElementById('feedback');
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        feedback.innerHTML = '';
+
+        const formData = Object.fromEntries(new FormData(form).entries());
+
+        try {
+          const response = await fetch('http://localhost:3001/submit-form', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+          });
+
+          const data = await response.json();
+
+          if (!response.ok) {
+            throw new Error(data.message || 'Request failed.');
+          }
+
+          feedback.innerHTML = `<div class="message success">${data.message}</div>`;
+          form.reset();
+        } catch (error) {
+          feedback.innerHTML = `<div class="message error">${error.message}</div>`;
+        }
+      });
+    </script>
+  </body>
+</html>
