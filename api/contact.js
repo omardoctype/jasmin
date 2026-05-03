@@ -1,139 +1,208 @@
-﻿const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-const metaApiVersion = process.env.META_API_VERSION || 'v21.0';
+﻿const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const PHONE_PATTERN = /^\+?[0-9][0-9\s().-]{5,}$/;
+const META_API_URL = 'https://graph.facebook.com/v25.0';
+
+function setCorsHeaders(res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+}
 
 function normalizePayload(payload) {
   return {
     fullName: String(payload?.fullName || '').trim(),
-    email: String(payload?.email || '').trim(),
     phone: String(payload?.phone || '').trim(),
+    email: String(payload?.email || '').trim(),
     message: String(payload?.message || '').trim(),
   };
 }
 
 function validatePayload(payload) {
-  if (!payload.fullName || !payload.email || !payload.phone || !payload.message) {
-    return {
-      valid: false,
-      message: 'Tous les champs sont obligatoires.',
-    };
+  if (!payload.fullName) {
+    return 'fullName is required.';
+  }
+  if (!payload.phone) {
+    return 'phone is required.';
+  }
+  if (!payload.email) {
+    return 'email is required.';
+  }
+  if (!payload.message) {
+    return 'message is required.';
+  }
+  if (!EMAIL_PATTERN.test(payload.email)) {
+    return 'email is invalid.';
+  }
+  if (!PHONE_PATTERN.test(payload.phone)) {
+    return 'phone is invalid.';
   }
 
-  if (!emailPattern.test(payload.email)) {
-    return {
-      valid: false,
-      message: 'Adresse email invalide.',
-    };
-  }
-
-  return { valid: true };
+  return null;
 }
 
-function buildWhatsAppMessage(payload) {
+function buildWhatsAppMessage({ fullName, phone, email, message }) {
   return [
     '\u{1F4E9} Nouveau message depuis le site',
     '',
-    `\u{1F464} Nom: ${payload.fullName}`,
-    `\u{1F4DE} T\u00E9l\u00E9phone: ${payload.phone}`,
-    `\u{1F4E7} Email: ${payload.email}`,
+    `\u{1F464} Nom: ${fullName}`,
+    `\u{1F4DE} Téléphone: ${phone}`,
+    `\u{1F4E7} Email: ${email}`,
     '',
     '\u{1F4AC} Message:',
-    payload.message,
+    message,
   ].join('\n');
 }
 
-function getRequestBody(req) {
-  if (typeof req.body === 'string') {
-    try {
-      return JSON.parse(req.body);
-    } catch {
-      return null;
-    }
+async function parseRequestBody(req) {
+  if (req.body && typeof req.body === 'object') {
+    return req.body;
   }
 
-  return req.body || null;
+  if (typeof req.body === 'string') {
+    const trimmed = req.body.trim();
+    if (!trimmed) {
+      return null;
+    }
+    return JSON.parse(trimmed);
+  }
+
+  let raw = '';
+  for await (const chunk of req) {
+    raw += chunk;
+  }
+
+  const trimmed = raw.trim();
+  if (!trimmed) {
+    return null;
+  }
+
+  return JSON.parse(trimmed);
 }
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    res.setHeader('Allow', 'POST');
-    return res.status(405).json({
-      success: false,
-      message: 'Method Not Allowed',
-    });
-  }
-
-  const rawBody = getRequestBody(req);
-  if (!rawBody) {
-    return res.status(400).json({
-      success: false,
-      message: 'Payload invalide.',
-    });
-  }
-
-  const payload = normalizePayload(rawBody);
-  const validation = validatePayload(payload);
-  if (!validation.valid) {
-    return res.status(400).json({
-      success: false,
-      message: validation.message,
-    });
-  }
-
-  const token = process.env.WHATSAPP_TOKEN;
-  const phoneNumberId = process.env.WHATSAPP_PHONE_NUMBER_ID;
-  const adminPhoneNumber = process.env.ADMIN_WHATSAPP_NUMBER;
-
-  if (!token || !phoneNumberId || !adminPhoneNumber) {
-    console.error('Missing WhatsApp env vars: WHATSAPP_TOKEN / WHATSAPP_PHONE_NUMBER_ID / ADMIN_WHATSAPP_NUMBER');
-    return res.status(500).json({
-      success: false,
-      message: "Erreur lors de l'envoi. Veuillez r\u00E9essayer.",
-    });
-  }
-
   try {
-    const apiResponse = await fetch(
-      `https://graph.facebook.com/${metaApiVersion}/${phoneNumberId}/messages`,
-      {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          messaging_product: 'whatsapp',
-          recipient_type: 'individual',
-          to: adminPhoneNumber,
-          type: 'text',
-          text: {
-            preview_url: false,
-            body: buildWhatsAppMessage(payload),
-          },
-        }),
-      },
-    );
+    setCorsHeaders(res);
 
-    const responseData = await apiResponse.json().catch(() => ({}));
+    if (req.method === 'OPTIONS') {
+      return res.status(200).json({
+        success: true,
+        message: 'Preflight OK',
+      });
+    }
 
-    if (!apiResponse.ok) {
-      console.error('WhatsApp Cloud API error:', responseData);
-      return res.status(502).json({
+    if (req.method !== 'POST') {
+      res.setHeader('Allow', 'POST, OPTIONS');
+      return res.status(405).json({
         success: false,
-        message: "Erreur lors de l'envoi. Veuillez r\u00E9essayer.",
+        message: 'Method Not Allowed',
+      });
+    }
+
+    let body;
+    try {
+      body = await parseRequestBody(req);
+    } catch (error) {
+      console.error('Invalid JSON body:', error);
+      return res.status(400).json({
+        success: false,
+        message: 'Invalid JSON body.',
+      });
+    }
+
+    if (!body) {
+      return res.status(400).json({
+        success: false,
+        message: 'Request body is required.',
+      });
+    }
+
+    const payload = normalizePayload(body);
+    const validationError = validatePayload(payload);
+    if (validationError) {
+      return res.status(400).json({
+        success: false,
+        message: validationError,
+      });
+    }
+
+    const token = process.env.WHATSAPP_TOKEN;
+    const phoneNumberId = process.env.WHATSAPP_PHONE_NUMBER_ID;
+    const adminPhoneNumber = process.env.ADMIN_WHATSAPP_NUMBER;
+
+    const missingEnv = [
+      ['WHATSAPP_TOKEN', token],
+      ['WHATSAPP_PHONE_NUMBER_ID', phoneNumberId],
+      ['ADMIN_WHATSAPP_NUMBER', adminPhoneNumber],
+    ]
+      .filter(([, value]) => !value)
+      .map(([key]) => key);
+
+    if (missingEnv.length > 0) {
+      const message = `Missing required environment variables: ${missingEnv.join(', ')}`;
+      console.error(message);
+      return res.status(500).json({
+        success: false,
+        message,
+      });
+    }
+
+    const formattedMessage = buildWhatsAppMessage(payload);
+
+    const metaResponse = await fetch(`${META_API_URL}/${phoneNumberId}/messages`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        messaging_product: 'whatsapp',
+        recipient_type: 'individual',
+        to: adminPhoneNumber,
+        type: 'text',
+        text: {
+          preview_url: false,
+          body: formattedMessage,
+        },
+      }),
+    });
+
+    const metaRawBody = await metaResponse.text();
+    let metaData;
+    try {
+      metaData = metaRawBody ? JSON.parse(metaRawBody) : null;
+    } catch {
+      metaData = null;
+    }
+
+    console.log('Meta WhatsApp API full response:', {
+      status: metaResponse.status,
+      ok: metaResponse.ok,
+      body: metaData ?? metaRawBody,
+    });
+
+    if (!metaResponse.ok) {
+      if (metaData && typeof metaData === 'object') {
+        return res.status(500).json(metaData);
+      }
+
+      return res.status(500).json({
+        error: {
+          message: metaRawBody || 'Meta WhatsApp API request failed.',
+          status: metaResponse.status,
+        },
       });
     }
 
     return res.status(200).json({
       success: true,
-      message: 'Votre message a \u00E9t\u00E9 envoy\u00E9 avec succ\u00E8s.',
-      whatsappResponse: responseData,
+      message: 'Votre message a été envoyé avec succès.',
+      data: metaData,
     });
   } catch (error) {
-    console.error('Contact API failure:', error);
+    console.error('api/contact.js unexpected error:', error);
     return res.status(500).json({
       success: false,
-      message: "Erreur lors de l'envoi. Veuillez r\u00E9essayer.",
+      message: 'Internal server error.',
     });
   }
 }
-
