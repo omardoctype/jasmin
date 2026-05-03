@@ -1,7 +1,6 @@
 import { AnimatePresence, motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { Award, ChefHat } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import slide1 from '../assets/1.jpg';
 import slide2 from '../assets/2.jpg';
 import slide3 from '../assets/3.jpg';
 import slide5 from '../assets/5.jpg';
@@ -17,7 +16,6 @@ import Reveal from '../components/Reveal';
 import TextReveal from '../components/TextReveal';
 
 const photoSlides = [
-  { src: slide1, alt: 'Photo Ecole Jasmin 1' },
   { src: slide2, alt: 'Photo Ecole Jasmin 2' },
   { src: slide3, alt: 'Photo Ecole Jasmin 3' },
   { src: slide5, alt: 'Photo Ecole Jasmin 5' },
