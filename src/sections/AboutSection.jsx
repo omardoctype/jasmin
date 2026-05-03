@@ -22,8 +22,8 @@ const values = [
     backgroundImage: cappImage,
   },
   {
-    title: 'Accompagnement',
-    text: 'Un suivi attentif pour aider chaque etudiant a progresser avec confiance.',
+    title: 'Accompagnement attentif',
+    text: 'Un suivi attentif pour aider chaque étudiant à progresser avec confiance.',
     icon: BookOpen,
     backgroundImage: diplomeImage,
   },

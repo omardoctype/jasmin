@@ -17,6 +17,10 @@ const chefOverrides = {
     specialty: 'Formation pratique',
     bio: 'Elle accompagne les étudiants avec exigence et bienveillance tout au long de leur formation.',
   },
+  'Chef Mahdi': {
+    specialty: 'Cuisine / Pâtisserie',
+    bio: 'Il accompagne les étudiants avec expertise, rigueur et passion, en partageant les techniques essentielles du métier.',
+  },
 };
 
 export default function ChefsSection() {
@@ -33,7 +37,7 @@ export default function ChefsSection() {
           description="Notre équipe transmet les bons gestes, les méthodes de travail et les exigences du métier."
         />
 
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {chefs.map((chef, index) => (
             <Reveal
               key={chef.name}

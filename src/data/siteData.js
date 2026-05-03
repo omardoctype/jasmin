@@ -2,6 +2,7 @@
 import brandMark from '../assets/logo.png';
 import chefHassen from '../assets/chefs/Hassen ALLAGUI.jpg';
 import chefKhalil from '../assets/chefs/Khalil ARFI.jpg';
+import chefMahdi from '../assets/chefs/MAHDI.png';
 import chefManel from '../assets/chefs/mme manel2.jpg';
 import eventPlaceholder from '../assets/event-placeholder.svg';
 import heroVisual from '../assets/hero-visual.svg';
@@ -118,11 +119,11 @@ export const formations = [
 
 export const chefs = [
   {
-    name: 'Chef Hassen Allagui',
-    specialty: 'Pâtisserie',
-    bio: "Il accompagne les étudiants dans l'apprentissage des bases, de la précision technique et de l'organisation du travail.",
-    image: chefHassen,
-    imagePosition: 'center 18%',
+    name: 'Cheffe Manel Sallemi',
+    specialty: 'Formation pratique',
+    bio: 'Elle accompagne les étudiants avec attention afin de soutenir leur progression tout au long de la formation.',
+    image: chefManel,
+    imagePosition: 'center 12%',
   },
   {
     name: 'Chef Khalil Arfi',
@@ -132,11 +133,18 @@ export const chefs = [
     imagePosition: 'center 14%',
   },
   {
-    name: 'Cheffe Manel Sallemi',
-    specialty: 'Formation pratique',
-    bio: 'Elle accompagne les étudiants avec attention afin de soutenir leur progression tout au long de la formation.',
-    image: chefManel,
-    imagePosition: 'center 12%',
+    name: 'Chef Hassen Allagui',
+    specialty: 'Pâtisserie',
+    bio: "Il accompagne les étudiants dans l'apprentissage des bases, de la précision technique et de l'organisation du travail.",
+    image: chefHassen,
+    imagePosition: 'center 18%',
+  },
+  {
+    name: 'Chef Mahdi',
+    specialty: 'Cuisine / Pâtisserie',
+    bio: 'Il accompagne les étudiants avec expertise, rigueur et passion, en partageant les techniques essentielles du métier.',
+    image: chefMahdi,
+    imagePosition: 'center 18%',
   },
 ];
 

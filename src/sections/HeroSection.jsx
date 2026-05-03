@@ -94,12 +94,12 @@ export default function HeroSection() {
       ref={heroRef}
       className="relative overflow-hidden"
     >
-      <div className="relative min-h-[62svh] sm:min-h-[84svh]">
+      <div className="relative min-h-[68svh] overflow-hidden sm:min-h-[82svh] lg:min-h-[84svh]">
         <motion.img
           src={photoSlides[activeSlide].src}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover object-[center_28%] sm:object-center lg:object-[center_58%]"
+          className="absolute inset-0 h-full w-full object-cover object-[center_24%] sm:object-center lg:object-[center_58%]"
           style={{ y: reduceMotion ? 0 : mediaY }}
         />
         <AnimatePresence mode="sync" initial={false}>
@@ -107,7 +107,7 @@ export default function HeroSection() {
             key={photoSlides[activeSlide].src}
             src={photoSlides[activeSlide].src}
             alt={photoSlides[activeSlide].alt}
-            className="absolute inset-0 h-full w-full object-cover object-[center_28%] sm:object-center lg:object-[center_58%]"
+            className="absolute inset-0 h-full w-full object-cover object-[center_24%] sm:object-center lg:object-[center_58%]"
             loading={activeSlide === 0 ? 'eager' : 'lazy'}
             decoding="async"
             style={{ willChange: 'opacity, transform, filter', y: reduceMotion ? 0 : mediaY }}
@@ -118,7 +118,7 @@ export default function HeroSection() {
           />
         </AnimatePresence>
         <motion.div
-          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(26,26,26,0.64),rgba(26,26,26,0.34)_46%,rgba(26,26,26,0.16))] sm:bg-[linear-gradient(90deg,rgba(26,26,26,0.56),rgba(26,26,26,0.24)_42%,rgba(26,26,26,0.1))]"
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(26,26,26,0.52),rgba(26,26,26,0.24)_46%,rgba(26,26,26,0.1))] sm:bg-[linear-gradient(90deg,rgba(26,26,26,0.5),rgba(26,26,26,0.2)_42%,rgba(26,26,26,0.08))]"
           style={{ opacity: reduceMotion ? 1 : overlayOpacity }}
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(237,230,218,0.22),transparent_28%)]" />
@@ -129,12 +129,12 @@ export default function HeroSection() {
           transition={reduceMotion ? undefined : { duration: 8, repeat: Infinity, ease: 'easeInOut', delay: 0.6 }}
         />
 
-        <div className="site-container relative z-10 flex min-h-[62svh] items-end pb-12 pt-24 sm:min-h-[84svh] sm:pb-28 sm:pt-36 lg:pb-32">
+        <div className="site-container relative z-20 flex min-h-[68svh] items-end pb-24 pt-24 sm:min-h-[82svh] sm:pb-28 sm:pt-36 lg:min-h-[84svh] lg:pb-32">
           <Reveal
-            className="max-w-3xl"
+            className="relative z-20 w-full max-w-[620px]"
             variant="fade-right"
           >
-            <div className="max-w-[18rem] space-y-4 sm:max-w-3xl sm:space-y-6">
+            <div className="relative z-20 flex max-w-[21rem] flex-col items-start sm:max-w-[620px]">
               <div className="space-y-4">
                 <motion.h3
   className="text-white text-2xl sm:text-3xl lg:text-4xl font-display leading-snug relative z-10"
@@ -145,7 +145,7 @@ export default function HeroSection() {
   L'excellence culinaire commence ici
 </motion.h3>
                 <motion.p
-                  className="max-w-[16rem] text-sm leading-6 text-white/84 sm:max-w-2xl sm:text-lg sm:leading-8"
+                  className="max-w-[20rem] text-sm leading-6 text-white/90 sm:max-w-2xl sm:text-lg sm:leading-8"
                   initial={reduceMotion ? false : { opacity: 0, y: 20 }}
                   animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                   transition={reduceMotion ? undefined : { delay: 0.3, duration: 0.72, ease: [0.22, 1, 0.36, 1] }}
@@ -155,14 +155,14 @@ export default function HeroSection() {
               </div>
 
               <motion.div
-                className="flex flex-wrap gap-3 pt-1 sm:pt-2"
+                className="mt-5 md:mt-6"
                 initial={reduceMotion ? false : { opacity: 0, y: 20 }}
                 animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
                 transition={reduceMotion ? undefined : { delay: 0.42, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
               >
                 <a
                   href="#contact"
-                  className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-jasmin-dark shadow-[0_18px_44px_-26px_rgba(255,255,255,0.65)] transition-transform duration-300 hover:-translate-y-0.5 hover:bg-jasmin-cream sm:px-6 sm:py-3"
+                  className="inline-flex min-h-11 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-jasmin-dark shadow-[0_18px_44px_-26px_rgba(255,255,255,0.65)] transition-transform duration-300 hover:-translate-y-0.5 hover:bg-jasmin-cream"
                 >
                   S'inscrire
                 </a>
@@ -171,10 +171,10 @@ export default function HeroSection() {
           </Reveal>
         </div>
 
-        <div className="absolute inset-x-0 bottom-0 h-20 bg-[radial-gradient(60%_130%_at_50%_0%,transparent_55%,#f7f5f0_56%)] sm:h-24" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-10 h-16 bg-[radial-gradient(64%_120%_at_50%_0%,transparent_48%,#f7f5f0_49%)] sm:h-20 lg:h-24" />
       </div>
 
-      <div className="relative -mt-3 sm:-mt-6">
+      <div className="relative mt-0 sm:mt-1">
         <div className="site-container">
           <Reveal variant="zoom-in">
             <motion.div
