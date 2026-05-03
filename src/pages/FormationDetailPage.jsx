@@ -1,4 +1,4 @@
-import { ArrowLeft, Clock3, GraduationCap, Layers3 } from 'lucide-react';
+﻿import { ArrowLeft, Clock3, GraduationCap, Layers3 } from 'lucide-react';
 import schoolLogo from '../assets/logo.png';
 import Reveal from '../components/Reveal';
 import { getFormationBySlug } from '../data/formationsData';
@@ -76,7 +76,7 @@ export default function FormationDetailPage({ slug }) {
                 <img
                   src={schoolLogo}
                   alt="Logo École Jasmin"
-                  className="h-7 w-7 rounded-full object-cover"
+                  className="h-7 w-auto max-w-7 rounded-full object-contain"
                 />
                 <span className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-jasmin-brown">
                   École Jasmin
@@ -99,7 +99,7 @@ export default function FormationDetailPage({ slug }) {
                 <img
                   src={formation.image}
                   alt={formation.label}
-                  className={`w-full bg-[#e9ddcb] transform-gpu ${detailImageHeightClass} ${detailImageFitClass} ${formation.imageBlurClass ?? 'blur-0'} ${formation.imageScaleClass ?? 'scale-100'}`}
+                  className={`w-full bg-[#e9ddcb] transform-gpu ${detailImageHeightClass} ${detailImageFitClass}`}
                   style={{ objectPosition: formation.imagePosition }}
                 />
               </div>
@@ -177,3 +177,4 @@ export default function FormationDetailPage({ slug }) {
     </main>
   );
 }
+

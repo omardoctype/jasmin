@@ -7,19 +7,19 @@ import SectionHeading from '../components/SectionHeading';
 
 const sponsors = [
   {
-    name: 'Raddison',
+    name: 'Radisson',
     image: raddisonLogo,
-    imageClassName: 'max-h-20 sm:max-h-24',
+    imageClassName: 'max-h-16 md:max-h-20',
   },
   {
     name: 'Gourmandise',
     image: gourmandiseLogo,
-    imageClassName: 'max-h-20 sm:max-h-24',
+    imageClassName: 'max-h-16 md:max-h-20',
   },
   {
     name: 'Wayba',
     image: waybaLogo,
-    imageClassName: 'max-h-20 sm:max-h-24',
+    imageClassName: 'max-h-16 md:max-h-20',
   },
 ];
 
@@ -34,7 +34,7 @@ export default function SponsorsSection() {
           eyebrow="Nos partenaires"
           eyebrowLogo={schoolLogo}
           title="Nos partenaires"
-          description="Des entreprises qui soutiennent la formation et les activites de l'ecole."
+          description="Des entreprises qui soutiennent la formation et les activités de l'école."
           align="center"
         />
 
@@ -52,7 +52,7 @@ export default function SponsorsSection() {
                       src={sponsor.image}
                       alt={sponsor.name}
                       loading="lazy"
-                      className={`${sponsor.imageClassName} w-auto object-contain opacity-85 grayscale-[15%] transition-[opacity,filter,transform] duration-500 ease-out hover:scale-[1.04] hover:opacity-100 hover:grayscale-0`}
+                      className={`${sponsor.imageClassName} w-auto max-w-full object-contain`}
                     />
                   </div>
                 </Reveal>

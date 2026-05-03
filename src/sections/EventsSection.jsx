@@ -1,4 +1,4 @@
-import EventCard from '../components/EventCard';
+﻿import EventCard from '../components/EventCard';
 import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
 import { events, newsItems } from '../data/siteData';
@@ -13,7 +13,7 @@ export default function EventsSection() {
         <SectionHeading
           eyebrow="Vie du centre"
           title="Évènements, expériences et moments de partage"
-          description="La vie de l’école se prolonge au-delà des cours avec des temps forts conçus pour valoriser les talents et créer une vraie culture culinaire."
+          description="La vie de lâ€™école se prolonge au-delà des cours avec des temps forts conçus pour valoriser les talents et créer une vraie culture culinaire."
         />
 
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
@@ -38,7 +38,7 @@ export default function EventsSection() {
                   Actualités
                 </p>
                 <h3 className="font-display text-4xl leading-none text-jasmin-dark">
-                  Les nouveautés de l’école
+                  Les nouveautés de lâ€™école
                 </h3>
               </div>
               <p className="max-w-xl text-sm leading-7 text-jasmin-dark/68">
@@ -68,4 +68,5 @@ export default function EventsSection() {
     </section>
   );
 }
+
 

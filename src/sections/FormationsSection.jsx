@@ -1,4 +1,4 @@
-import { motion, useReducedMotion } from 'framer-motion';
+﻿import { motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRight, Clock3 } from 'lucide-react';
 import Reveal from '../components/Reveal';
 import schoolLogo from '../assets/logo.png';
@@ -26,9 +26,7 @@ function FormationSpecialtyLink({ formation }) {
   const imageWrapperClass = formation.imageFit === 'contain'
     ? `relative overflow-hidden ${imageBackgroundClass} h-72 sm:h-80 lg:h-96`
     : `relative overflow-hidden ${imageBackgroundClass} h-72 sm:h-80 lg:h-96`;
-  const imageMotionClass = formation.imageFit === 'contain'
-    ? 'transition-opacity duration-300 ease-out'
-    : 'transition-transform duration-500 ease-out hover:scale-[1.03]';
+  const imageMotionClass = 'transition-opacity duration-300 ease-out';
 
   return (
     <motion.a
@@ -45,18 +43,10 @@ function FormationSpecialtyLink({ formation }) {
             src={formation.image}
             alt={formation.label}
             loading="lazy"
-            className={`h-full w-full transform-gpu ${imageMotionClass} ${imageFitClass} ${formation.imageBlurClass ?? 'blur-0'} ${formation.imageScaleClass ?? 'scale-100'}`}
+            className={`h-full w-full transform-gpu ${imageMotionClass} ${imageFitClass}`}
             style={{ objectPosition: formation.imagePosition }}
           />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(26,26,26,0.04),rgba(26,26,26,0.2))] opacity-80 transition-opacity duration-300 group-hover:opacity-55" />
-          <motion.div
-            aria-hidden="true"
-            className="absolute inset-y-0 -left-1/3 w-1/3 -skew-x-12 bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.28),transparent)] opacity-0"
-            initial={false}
-            whileHover={reduceMotion ? undefined : { x: ['0%', '420%'], opacity: [0, 1, 0] }}
-            transition={{ duration: 0.9, ease: 'easeOut' }}
-          />
-          <div className="absolute left-4 top-4 rounded-full border border-white/24 bg-white/82 px-3 py-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-jasmin-dark shadow-[0_14px_34px_-24px_rgba(26,26,26,0.45)] backdrop-blur-md">
+          <div className="absolute left-4 top-4 rounded-full border border-white/24 bg-white/92 px-3 py-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.18em] text-jasmin-dark shadow-[0_14px_34px_-24px_rgba(26,26,26,0.45)]">
             {formation.diploma}
           </div>
         </div>
@@ -101,7 +91,7 @@ export default function FormationsSection() {
               <img
                 src={schoolLogo}
                 alt="Logo École Jasmin"
-                className="h-7 w-7 rounded-full object-cover"
+                className="h-7 w-auto max-w-7 rounded-full object-contain"
               />
               <span className="text-[0.7rem] font-semibold uppercase tracking-[0.26em] text-jasmin-brown">
                 École Jasmin
@@ -155,3 +145,4 @@ export default function FormationsSection() {
     </section>
   );
 }
+

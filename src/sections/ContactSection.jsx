@@ -79,8 +79,8 @@ export default function ContactSection() {
         <SectionHeading
           eyebrow="Contact"
           eyebrowLogo={schoolLogo}
-          title="Contactez notre Ã©quipe"
-          description="Ã‰crivez-nous pour obtenir des informations, prÃ©parer votre inscription ou organiser une visite du centre."
+          title="Contactez notre équipe"
+          description="Écrivez-nous pour obtenir des informations, préparer votre inscription ou organiser une visite du centre."
         />
 
         <div className="grid gap-6 xl:grid-cols-[0.92fr_1.08fr]">
@@ -88,7 +88,7 @@ export default function ContactSection() {
             <div className="surface-card overflow-hidden p-3">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.2467742473423!2d10.75735701132729!3d34.799732877779604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1301d3a472360ef3%3A0x8fb51b76828bd55f!2sCentre%20Jasmin%20pour%20la%20Formation%20en%20P%C3%A2tisserie%20et%20en%20cuisine!5e0!3m2!1sfr!2stn!4v1775411867203!5m2!1sfr!2stn"
-                title="Localisation Ã‰cole Jasmin"
+                title="Localisation École Jasmin"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="h-72 w-full rounded-[24px]"
@@ -113,7 +113,7 @@ export default function ContactSection() {
                     className="hover-glow rounded-[22px] border border-jasmin-brown/10 bg-white/72 p-4"
                   >
                     <Phone className="h-5 w-5 text-jasmin-gold" />
-                    <p className="mt-4 text-sm font-semibold text-jasmin-dark">TÃ©lÃ©phone</p>
+                    <p className="mt-4 text-sm font-semibold text-jasmin-dark">Téléphone</p>
                     <p className="mt-2 text-sm text-jasmin-dark/70">{contactDetails.phone}</p>
                   </a>
 
@@ -143,7 +143,7 @@ export default function ContactSection() {
                   Faites le premier pas
                 </h3>
                 <p className="max-w-2xl text-sm leading-7 text-jasmin-dark/70">
-                  Notre Ã©quipe vous contactera rapidement.
+                  Notre équipe vous contactera rapidement.
                 </p>
               </div>
 
@@ -183,7 +183,7 @@ export default function ContactSection() {
 
                 <label className="grid gap-2">
                   <span className="text-sm font-medium text-jasmin-dark">
-                    TÃ©lÃ©phone
+                    Téléphone
                     <span className="ml-1 text-xs text-red-500">*</span>
                   </span>
                   <input
@@ -205,7 +205,7 @@ export default function ContactSection() {
                     value={formData.message}
                     onChange={handleChange}
                     className="rounded-[24px] border border-jasmin-brown/12 bg-white/78 px-4 py-4 text-sm text-jasmin-dark placeholder:text-jasmin-dark/34"
-                    placeholder="PrÃ©cisez votre demande ou la formation qui vous intÃ©resse."
+                    placeholder="Précisez votre demande ou la formation qui vous intéresse."
                   />
                 </label>
 
@@ -223,7 +223,7 @@ export default function ContactSection() {
 
                 <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm leading-7 text-jasmin-dark/62">
-                    Votre demande sera envoyÃ©e automatiquement Ã  notre Ã©quipe.
+                    Votre demande sera envoyée automatiquement à notre équipe.
                   </p>
                   <button
                     type="submit"
@@ -241,5 +241,6 @@ export default function ContactSection() {
     </section>
   );
 }
+
 
 

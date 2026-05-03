@@ -1,4 +1,4 @@
-import cuisineImage from '../assets/cuisine.jpg';
+﻿import cuisineImage from '../assets/cuisine.jpg';
 import sweetImage from '../assets/sweet.jpg';
 import sweetImageTwo from '../assets/sweet2.jpg';
 import ccPatisserieImage from '../assets/ccpat.jpg';
@@ -19,8 +19,6 @@ const sharedTheoreticalModules = [
 
 const sharedImageSettings = {
   imageFit: 'cover',
-  imageBlurClass: 'blur-[2px]',
-  imageScaleClass: 'scale-[1.02]',
   imagePosition: 'center 50%',
 };
 
@@ -36,7 +34,6 @@ export const formationsCatalog = [
     ...sharedImageSettings,
     imageFit: 'contain',
     imageBackgroundClass: 'bg-transparent',
-    imageScaleClass: 'scale-[1.04]',
     imagePosition: 'center center',
     intro:
       "Cette spécialité permet d'acquérir les bases techniques indispensables pour entrer dans le monde de la pâtisserie professionnelle avec une pratique encadrée et progressive.",
@@ -57,11 +54,10 @@ export const formationsCatalog = [
     diploma: 'Brevet de Technicien Professionnel',
     duration: '2 ans : 11 mois de formation et 4 mois de stage',
     level: 'Niveau requis : 2e année secondaire accomplie ou CAP',
-    image: ccCuisineImage,
+    image: btpPatisserieImage,
     ...sharedImageSettings,
     imageFit: 'contain',
     imageBackgroundClass: 'bg-transparent',
-    imageScaleClass: 'scale-[1.04]',
     imagePosition: 'center center',
     intro:
       "Le parcours BTP en pâtisserie approfondit les techniques de production, la régularité, la présentation et l'organisation professionnelle en laboratoire.",
@@ -82,11 +78,10 @@ export const formationsCatalog = [
     diploma: 'Certificat de compétence',
     duration: '1 an : 10 mois de formation et 2 mois de stage',
     level: 'Niveau requis : 6e année primaire',
-    image: btpPatisserieImage,
+    image: ccCuisineImage,
     ...sharedImageSettings,
     imageFit: 'contain',
     imageBackgroundClass: 'bg-transparent',
-    imageScaleClass: 'scale-[1.04]',
     imagePosition: 'center center',
     intro:
       "Cette formation apporte les fondamentaux de la cuisine professionnelle, du poste de travail jusqu'aux techniques de préparation chaude et froide.",
@@ -111,7 +106,6 @@ export const formationsCatalog = [
     ...sharedImageSettings,
     imageFit: 'contain',
     imageBackgroundClass: 'bg-transparent',
-    imageScaleClass: 'scale-[1.04]',
     imagePosition: 'center center',
     intro:
       "Le BTP Cuisine forme des profils plus autonomes, capables de produire, d'organiser et d'exécuter en respectant les standards d'une cuisine professionnelle.",
@@ -136,7 +130,6 @@ export const formationsCatalog = [
     ...sharedImageSettings,
     imageFit: 'contain',
     imageBackgroundClass: 'bg-transparent',
-    imageScaleClass: 'scale-[1.04]',
     imagePosition: 'center center',
     intro:
       "Le CAP propose une base polyvalente en cuisine et en pâtisserie pour construire un profil complet, pratique et évolutif.",
@@ -155,3 +148,4 @@ export const formationsCatalog = [
 export function getFormationBySlug(slug) {
   return formationsCatalog.find((formation) => formation.slug === slug) ?? null;
 }
+

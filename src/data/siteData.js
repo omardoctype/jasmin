@@ -8,7 +8,7 @@ import heroVisual from '../assets/hero-visual.svg';
 import mapPlaceholder from '../assets/map-placeholder.svg';
 
 export const brand = {
-  name: 'Ã‰cole Jasmin',
+  name: 'École Jasmin',
   subtitle: 'Centre de formation professionnelle',
   mark: brandMark,
 };
@@ -29,34 +29,34 @@ export const socialLinks = {
 export const navigation = [
   { label: 'Accueil', href: '#accueil' },
   { label: 'Formations', href: '#formations' },
-  { label: "L'Ã©cole", href: '#ecole' },
+  { label: "L'école", href: '#ecole' },
   { label: 'Chefs', href: '#chefs' },
-  { label: 'Ã‰vÃ©nements', href: '#evenements' },
+  { label: 'Événements', href: '#evenements' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const heroContent = {
   image: heroVisual,
-  eyebrow: 'Cuisine - PÃ¢tisserie - Formation reconnue',
-  title: 'Formez-vous aux mÃ©tiers de la cuisine et de la pÃ¢tisserie',
-  subtitle: "Une formation professionnelle claire, sÃ©rieuse et reconnue par l'Ã‰tat",
+  eyebrow: 'Cuisine - Pâtisserie - Formation reconnue',
+  title: 'Formez-vous aux métiers de la cuisine et de la pâtisserie',
+  subtitle: "Une formation professionnelle claire, sérieuse et reconnue par l'État",
   highlights: [
     'Formation pratique',
     'Encadrement par des chefs formateurs',
-    'PrÃ©paration Ã  la vie professionnelle',
+    'Préparation à la vie professionnelle',
   ],
 };
 
 export const aboutContent = {
   image: aboutAtelier,
   text:
-    "Ã‰cole Jasmin est un centre de formation professionnelle en cuisine et en pÃ¢tisserie. Nous proposons des parcours structurÃ©s avec des diplÃ´mes reconnus par l'Ã‰tat.",
+    "École Jasmin est un centre de formation professionnelle en cuisine et en pâtisserie. Nous proposons des parcours structurés avec des diplômes reconnus par l'État.",
   description:
-    'Les Ã©tudiants Ã©voluent dans un cadre moderne, accueillant et axÃ© sur la pratique.',
+    'Les étudiants évoluent dans un cadre moderne, accueillant et axé sur la pratique.',
   stats: [
-    { value: 500, prefix: '+', label: 'Ã©tudiants formÃ©s' },
-    { value: 10, prefix: '+', label: 'formateurs qualifiÃ©s' },
-    { label: 'Formation reconnue', detail: "Parcours encadrÃ© et reconnu par l'Ã‰tat" },
+    { value: 500, prefix: '+', label: 'étudiants formés' },
+    { value: 10, prefix: '+', label: 'formateurs qualifiés' },
+    { label: 'Formation reconnue', detail: "Parcours encadré et reconnu par l'État" },
   ],
 };
 
@@ -65,13 +65,13 @@ export const programHighlights = [
     id: 'formation-base',
     title: 'Formation de base',
     description:
-      'Une formation pour maÃ®triser les bases de la cuisine, de la pÃ¢tisserie et du travail en atelier.',
+      'Une formation pour maîtriser les bases de la cuisine, de la pâtisserie et du travail en atelier.',
   },
   {
     id: 'formation-acceleree',
-    title: 'Formation accÃ©lÃ©rÃ©e',
+    title: 'Formation accélérée',
     description:
-      'Un rythme intensif pour progresser plus vite et accÃ©der plus rapidement au monde professionnel.',
+      'Un rythme intensif pour progresser plus vite et accéder plus rapidement au monde professionnel.',
   },
 ];
 
@@ -83,27 +83,27 @@ export const formations = [
     icon: 'chefHat',
   },
   {
-    title: 'BTP PÃ¢tisserie',
+    title: 'BTP Pâtisserie',
     description:
-      'Un parcours pour apprendre les bases de la pÃ¢tisserie, les desserts et les finitions professionnelles.',
+      'Un parcours pour apprendre les bases de la pâtisserie, les desserts et les finitions professionnelles.',
     icon: 'award',
   },
   {
-    title: 'CAP Cuisine et PÃ¢tisserie',
+    title: 'CAP Cuisine et Pâtisserie',
     description:
-      'Une formation polyvalente pour apprendre la cuisine et la pÃ¢tisserie dans un mÃªme parcours.',
+      'Une formation polyvalente pour apprendre la cuisine et la pâtisserie dans un même parcours.',
     icon: 'badge',
   },
   {
     title: 'CC Cuisine',
     description:
-      'Un programme pratique pour apprendre les gestes essentiels du mÃ©tier en cuisine.',
+      'Un programme pratique pour apprendre les gestes essentiels du métier en cuisine.',
     icon: 'book',
   },
   {
-    title: 'CC PÃ¢tisserie',
+    title: 'CC Pâtisserie',
     description:
-      'Une formation pratique pour acquÃ©rir de bonnes bases en pÃ¢tisserie.',
+      'Une formation pratique pour acquérir de bonnes bases en pâtisserie.',
     icon: 'sparkles',
   },
 ];
@@ -111,22 +111,22 @@ export const formations = [
 export const chefs = [
   {
     name: 'Chef Hassen Allagui',
-    specialty: 'PÃ¢tisserie',
-    bio: "Il accompagne les Ã©tudiants dans l'apprentissage des bases, de la prÃ©cision technique et de l'organisation du travail.",
+    specialty: 'Pâtisserie',
+    bio: "Il accompagne les étudiants dans l'apprentissage des bases, de la précision technique et de l'organisation du travail.",
     image: chefHassen,
     imagePosition: 'center 18%',
   },
   {
     name: 'Chef Khalil Arfi',
     specialty: 'Cuisine',
-    bio: 'Il accompagne les Ã©tudiants dans la pratique, la rigueur professionnelle et le travail en cuisine.',
+    bio: 'Il accompagne les étudiants dans la pratique, la rigueur professionnelle et le travail en cuisine.',
     image: chefKhalil,
     imagePosition: 'center 14%',
   },
   {
     name: 'Cheffe Manel Sallemi',
     specialty: 'Formation pratique',
-    bio: 'Elle accompagne les Ã©tudiants avec attention afin de soutenir leur progression tout au long de la formation.',
+    bio: 'Elle accompagne les étudiants avec attention afin de soutenir leur progression tout au long de la formation.',
     image: chefManel,
     imagePosition: 'center 12%',
   },
@@ -134,24 +134,24 @@ export const chefs = [
 
 export const events = [
   {
-    title: 'JournÃ©e de remise des diplÃ´mes',
+    title: 'Journée de remise des diplômes',
     date: 'Juin 2026',
     description:
-      'Une journÃ©e pour cÃ©lÃ©brer la fin de formation et remettre les diplÃ´mes aux Ã©tudiants.',
+      'Une journée pour célébrer la fin de formation et remettre les diplômes aux étudiants.',
     image: eventPlaceholder,
   },
   {
-    title: 'DÃ®ner gastronomique',
+    title: 'Dîner gastronomique',
     date: 'Octobre 2026',
     description:
-      'Un Ã©vÃ©nement pendant lequel les Ã©tudiants prÃ©pareront et serviront un menu complet.',
+      'Un événement pendant lequel les étudiants prépareront et serviront un menu complet.',
     image: eventPlaceholder,
   },
   {
     title: 'Atelier masterclass',
-    date: "Toute l'annÃ©e",
+    date: "Toute l'année",
     description:
-      'Des ateliers spÃ©ciaux pour approfondir les techniques en cuisine et en pÃ¢tisserie.',
+      'Des ateliers spéciaux pour approfondir les techniques en cuisine et en pâtisserie.',
     image: eventPlaceholder,
   },
 ];
@@ -159,50 +159,50 @@ export const events = [
 export const newsItems = [
   {
     title: 'Inscriptions 2026 ouvertes',
-    excerpt: 'Les inscriptions en cuisine et en pÃ¢tisserie sont maintenant ouvertes.',
+    excerpt: 'Les inscriptions en cuisine et en pâtisserie sont maintenant ouvertes.',
   },
   {
     title: 'Nouveaux ateliers pratiques',
-    excerpt: 'De nouveaux ateliers ont Ã©tÃ© ajoutÃ©s pour renforcer la pratique sur le terrain.',
+    excerpt: 'De nouveaux ateliers ont été ajoutés pour renforcer la pratique sur le terrain.',
   },
   {
-    title: 'Accueil des Ã©tudiants Ã©trangers',
-    excerpt: "L'Ã©cole accompagne aussi les Ã©tudiants Ã©trangers dans la prÃ©paration de leur arrivÃ©e.",
+    title: 'Accueil des étudiants étrangers',
+    excerpt: "L'école accompagne aussi les étudiants étrangers dans la préparation de leur arrivée.",
   },
 ];
 
 export const faqItems = [
   {
-    question: 'Quels diplÃ´mes sont proposÃ©s ?',
+    question: 'Quels diplômes sont proposés ?',
     answer:
-      "L'Ã©cole propose plusieurs formations en cuisine et en pÃ¢tisserie, avec diffÃ©rents niveaux de diplÃ´me.",
+      "L'école propose plusieurs formations en cuisine et en pâtisserie, avec différents niveaux de diplôme.",
   },
   {
     question: "Quelles sont les conditions d'inscription ?",
     answer:
-      "L'inscription se fait sur dossier. L'Ã©quipe vous accompagne pour choisir la formation la plus adaptÃ©e.",
+      "L'inscription se fait sur dossier. L'équipe vous accompagne pour choisir la formation la plus adaptée.",
   },
   {
-    question: "OÃ¹ se trouve l'Ã©cole ?",
+    question: "Où se trouve l'école ?",
     answer:
-      "L'Ã©cole est situÃ©e Route de Tunis km 6, Sakiet Ezzit, Ã  Sfax, en Tunisie.",
+      "L'école est située Route de Tunis km 6, Sakiet Ezzit, à Sfax, en Tunisie.",
   },
   {
     question: 'Quels types de formation sont disponibles ?',
     answer:
-      'Vous pouvez choisir une formation de base, une formation accÃ©lÃ©rÃ©e ou des ateliers pratiques selon votre objectif.',
+      'Vous pouvez choisir une formation de base, une formation accélérée ou des ateliers pratiques selon votre objectif.',
   },
 ];
 
 export const studentSupport = [
-  "Aide avant l'arrivÃ©e",
+  "Aide avant l'arrivée",
   'Orientation selon votre niveau',
   "Suivi simple pour bien commencer la formation",
 ];
 
 export const sponsors = [
   {
-    name: 'Raddison',
+    name: 'Radisson',
     category: 'Partenaire',
     icon: 'award',
   },
@@ -221,11 +221,12 @@ export const sponsors = [
 export const footerLinks = [
   { label: 'Formations', href: '#formations' },
   { label: 'Chefs', href: '#chefs' },
-  { label: 'Ã‰vÃ©nements', href: '#evenements' },
+  { label: 'Événements', href: '#evenements' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const imagery = {
   map: mapPlaceholder,
 };
+
 

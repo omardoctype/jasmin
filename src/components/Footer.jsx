@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
+﻿import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react';
 import { brand, contactDetails } from '../data/siteData';
 
 const quickLinks = [
@@ -22,7 +22,7 @@ export default function Footer() {
             <img
               src={brand.mark}
               alt="Logo École Jasmin"
-              className="h-14 w-14 rounded-2xl object-cover shadow-[0_18px_34px_-24px_rgba(74,58,42,0.42)]"
+              className="h-14 w-auto max-w-14 rounded-2xl object-contain shadow-[0_18px_34px_-24px_rgba(74,58,42,0.42)]"
             />
             <div>
               <p className="font-display text-3xl leading-none text-jasmin-dark">{brand.name}</p>
@@ -98,3 +98,4 @@ export default function Footer() {
     </footer>
   );
 }
+

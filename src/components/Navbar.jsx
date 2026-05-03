@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+﻿import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronDown, Facebook, Instagram, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { brand, socialLinks } from '../data/siteData';
@@ -6,17 +6,17 @@ import useScrolled from '../hooks/useScrolled';
 
 const mainLinks = [
   { label: 'Accueil', href: '#accueil' },
-  { label: "L'ecole", href: '#ecole' },
+  { label: "L'école", href: '#ecole' },
   { label: 'Nos chefs', href: '#chefs' },
   { label: 'Notre galerie', href: '#galerie' },
   { label: 'Contact', href: '#contact' },
 ];
 
 const formationLinks = [
-  { label: 'BTP Patisserie', href: '#/formations/btp-patisserie' },
+  { label: 'BTP Pâtisserie', href: '#/formations/btp-patisserie' },
   { label: 'BTP Cuisine', href: '#/formations/btp-cuisine' },
   { label: 'CAP', href: '#/formations/cap' },
-  { label: 'CC Patisserie', href: '#/formations/cc-patisserie' },
+  { label: 'CC Pâtisserie', href: '#/formations/cc-patisserie' },
   { label: 'CC Cuisine', href: '#/formations/cc-cuisine' },
 ];
 
@@ -43,8 +43,8 @@ export default function Navbar() {
         >
           <img
             src={brand.mark}
-            alt="Logo Ecole Jasmin"
-            className="h-12 w-12 rounded-xl shadow-[0_16px_32px_-24px_rgba(74,58,42,0.8)] sm:h-20 sm:w-20 sm:rounded-2xl"
+            alt="Logo École Jasmin"
+            className="h-12 w-auto max-w-12 rounded-xl object-contain shadow-[0_16px_32px_-24px_rgba(74,58,42,0.8)] sm:h-20 sm:max-w-20 sm:rounded-2xl"
           />
           <div className="min-w-0">
             <p className="truncate font-display text-[1.2rem] leading-none text-jasmin-dark sm:text-[1.85rem]">
@@ -112,7 +112,7 @@ export default function Navbar() {
             href="#ecole"
             className="text-sm font-medium text-jasmin-dark/76 transition-colors hover:text-jasmin-dark"
           >
-            L'ecole
+            L'école
           </a>
 
           <a
@@ -233,3 +233,4 @@ export default function Navbar() {
     </nav>
   );
 }
+

@@ -7,3 +7,25 @@
 
   [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
 [2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m19:56:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Footer.jsx, /src/sections/ChefsSection.jsx, /src/sections/ContactSection.jsx, /src/components/Navbar.jsx[22m
+[2m19:56:39[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/ContactSection.jsx, /src/index.css[22m
+[2m19:58:53[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/SponsorsSection.jsx, /src/index.css[22m
+[2m19:59:09[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx, /src/index.css[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/FormationDetailPage.jsx, /src/sections/FormationsSection.jsx[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/FormationDetailPage.jsx, /src/index.css[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/ChefsSection.jsx, /src/index.css[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/FormationsSection.jsx, /src/index.css[22m
+[2m20:00:26[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/GallerySection.jsx, /src/index.css[22m
+[2m20:01:30[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/index.css[22m
+[2m20:01:40[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/FormationDetailPage.jsx, /src/index.css[22m
+[2m20:01:47[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/Footer.jsx, /src/sections/ChefsSection.jsx, /src/sections/ContactSection.jsx, /src/components/Navbar.jsx[22m
+[2m20:04:23[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/components/SectionHeading.jsx[22m
+[2m20:04:44[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/FormationsSection.jsx, /src/index.css[22m
+[2m20:06:42[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/SponsorsSection.jsx, /src/index.css[22m
+[2m20:11:45[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/components/Footer.jsx, /src/sections/ChefsSection.jsx, /src/sections/ContactSection.jsx, /src/components/Navbar.jsx, /src/sections/SponsorsSection.jsx, /src/pages/FormationDetailPage.jsx, /src/sections/FormationsSection.jsx[22m
+[2m20:15:57[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/FormationDetailPage.jsx, /src/sections/FormationsSection.jsx[22m
+[2m20:16:18[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/sections/FormationsSection.jsx, /src/index.css[22m
+[2m20:16:34[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/FormationDetailPage.jsx, /src/index.css[22m

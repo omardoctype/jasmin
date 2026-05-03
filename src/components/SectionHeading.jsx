@@ -27,7 +27,7 @@ export default function SectionHeading({
             <img
               src={eyebrowLogo}
               alt=""
-              className="h-5 w-5 rounded-full object-cover"
+              className="h-5 w-auto max-w-5 rounded-full object-contain"
             />
           )}
           <span>{eyebrow}</span>

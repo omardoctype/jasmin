@@ -1,4 +1,4 @@
-import schoolLogo from '../assets/logo.png';
+﻿import schoolLogo from '../assets/logo.png';
 import ChefCard from '../components/ChefCard';
 import Reveal from '../components/Reveal';
 import SectionHeading from '../components/SectionHeading';
@@ -51,3 +51,4 @@ export default function ChefsSection() {
     </section>
   );
 }
+

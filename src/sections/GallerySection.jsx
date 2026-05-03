@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'framer-motion';
+﻿import { AnimatePresence, motion } from 'framer-motion';
 import { useState } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import Reveal from '../components/Reveal';
@@ -200,3 +200,4 @@ export default function GallerySection() {
     </>
   );
 }
+
