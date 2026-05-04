@@ -1,4 +1,4 @@
-import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
+﻿import { motion, useReducedMotion, useScroll, useTransform } from 'framer-motion';
 import { Award, BookOpen, ChefHat } from 'lucide-react';
 import { useRef } from 'react';
 import cappImageThree from '../assets/capp3.jpg';
@@ -11,19 +11,19 @@ import TextReveal from '../components/TextReveal';
 const values = [
   {
     title: 'Qualité',
-    text: "Une formation rigoureuse, claire et orientee vers l'excellence professionnelle.",
+    text: 'Nous formons des profils compétents répondant aux exigences du marché.',
     icon: ChefHat,
     backgroundImage: cappImageThree,
   },
   {
     title: 'Pratique',
-    text: 'Un apprentissage en atelier pour developper precision, methode et autonomie.',
+    text: 'Nos étudiants développent des compétences adaptées aux exigences du métier.',
     icon: Award,
     backgroundImage: cappImage,
   },
   {
     title: 'Accompagnement attentif',
-    text: 'Un suivi attentif pour aider chaque étudiant à progresser avec confiance.',
+    text: 'Formation en cuisine et pâtisserie, alliant pratique et encadrement pédagogique rigoureux.',
     icon: BookOpen,
     backgroundImage: diplomeImage,
   },
@@ -157,10 +157,7 @@ export default function AboutSection() {
                     <h3 className="font-display text-3xl leading-none text-white">
                       {value.title}
                     </h3>
-                    <p
-                      aria-hidden="true"
-                      className="invisible text-sm leading-7 text-white/84"
-                    >
+                    <p className="text-sm leading-relaxed text-white/85">
                       {value.text}
                     </p>
                   </div>

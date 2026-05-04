@@ -8,6 +8,9 @@ import slide6 from '../assets/6.jpg';
 import slide7 from '../assets/7.jpg';
 import slide8 from '../assets/8.jpg';
 import slide9 from '../assets/9.jpg';
+import pattt11 from '../assets/pattt11.jpg';
+import pattt112 from '../assets/pattt112.jpg';
+import pattt113 from '../assets/pattt113.jpg';
 import patisserieSlideOne from '../assets/pat1.JPG';
 import patisserieSlideTwo from '../assets/pat2.JPG';
 import patisserieSlideThree from '../assets/pat3.JPG';
@@ -30,6 +33,9 @@ const patisserieSlides = [
   { src: patisserieSlideTwo, alt: 'Atelier de patisserie Ecole Jasmin 2' },
   { src: patisserieSlideThree, alt: 'Atelier de patisserie Ecole Jasmin 3' },
   { src: patisserieSlideFour, alt: 'Atelier de patisserie Ecole Jasmin 4' },
+  { src: pattt11, alt: 'Atelier de patisserie Ecole Jasmin pattt 11' },
+  { src: pattt113, alt: 'Atelier de patisserie Ecole Jasmin pattt 113' },
+  { src: pattt112, alt: 'Atelier de patisserie Ecole Jasmin pattt 112' },
 ];
 
 export default function HeroSection() {
