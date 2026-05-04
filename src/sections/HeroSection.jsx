@@ -220,7 +220,7 @@ export default function HeroSection() {
                   Ecole Jasmin
                 </p>
                 <h2 className="max-w-2xl font-display text-3xl leading-tight text-jasmin-dark sm:text-4xl">
-                  Un espace moderne et bien equipe
+                  Un espace moderne et bien equipé
                 </h2>
 
                 <div className="relative space-y-6 pt-2">
