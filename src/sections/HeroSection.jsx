@@ -244,7 +244,7 @@ export default function HeroSection() {
                     </div>
                     <div className="space-y-2">
                       <h4 className="text-lg font-semibold text-jasmin-dark">
-                        Qualite et pratique
+                        Qualité et pratique
                       </h4>
                       <p className="text-sm leading-7 text-jasmin-dark/70">
                         Une formation construite autour de la qualite de l'apprentissage, de la pratique en

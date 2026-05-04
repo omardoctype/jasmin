@@ -17,9 +17,9 @@ const chefOverrides = {
     specialty: 'Formation pratique',
     bio: 'Elle accompagne les étudiants avec exigence et bienveillance tout au long de leur formation.',
   },
-  'Chef Mahdi': {
-    specialty: 'Cuisine / Pâtisserie',
-    bio: 'Il accompagne les étudiants avec expertise, rigueur et passion, en partageant les techniques essentielles du métier.',
+  'Mahdi Ouled Salem': {
+    specialty: 'Formateur en restauration et service bar',
+    bio: "Il transmet aux étudiants les bonnes pratiques du service, de l'accueil client et de la restauration, avec rigueur, élégance et sens du professionnalisme.",
   },
 };
 

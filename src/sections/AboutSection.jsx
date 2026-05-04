@@ -10,7 +10,7 @@ import TextReveal from '../components/TextReveal';
 
 const values = [
   {
-    title: 'Qualite',
+    title: 'Qualité',
     text: "Une formation rigoureuse, claire et orientee vers l'excellence professionnelle.",
     icon: ChefHat,
     backgroundImage: cappImageThree,
@@ -157,7 +157,10 @@ export default function AboutSection() {
                     <h3 className="font-display text-3xl leading-none text-white">
                       {value.title}
                     </h3>
-                    <p className="text-sm leading-7 text-white/84">
+                    <p
+                      aria-hidden="true"
+                      className="invisible text-sm leading-7 text-white/84"
+                    >
                       {value.text}
                     </p>
                   </div>

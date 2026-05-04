@@ -140,9 +140,9 @@ export const chefs = [
     imagePosition: 'center 18%',
   },
   {
-    name: 'Chef Mahdi',
-    specialty: 'Cuisine / Pâtisserie',
-    bio: 'Il accompagne les étudiants avec expertise, rigueur et passion, en partageant les techniques essentielles du métier.',
+    name: 'Mahdi Ouled Salem',
+    specialty: 'Formateur en restauration et service bar',
+    bio: "Il transmet aux étudiants les bonnes pratiques du service, de l'accueil client et de la restauration, avec rigueur, élégance et sens du professionnalisme.",
     image: chefMahdi,
     imagePosition: 'center 18%',
   },
