@@ -64,11 +64,6 @@ export default function HeroSection() {
       return undefined;
     }
 
-    const isMobile = window.innerWidth < 768;
-    if (isMobile) {
-      return undefined;
-    }
-
     const intervalId = window.setInterval(() => {
       setActiveSlide((current) => (current + 1) % photoSlides.length);
     }, 3600);
@@ -99,7 +94,7 @@ export default function HeroSection() {
           src={photoSlides[activeSlide].src}
           alt=""
           aria-hidden="true"
-          className="absolute inset-0 h-full w-full object-cover object-[center_24%] sm:object-center lg:object-[center_58%]"
+          className="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_58%]"
           style={{ y: reduceMotion ? 0 : mediaY }}
         />
         <AnimatePresence mode="sync" initial={false}>
@@ -107,7 +102,7 @@ export default function HeroSection() {
             key={photoSlides[activeSlide].src}
             src={photoSlides[activeSlide].src}
             alt={photoSlides[activeSlide].alt}
-            className="absolute inset-0 h-full w-full object-cover object-[center_24%] sm:object-center lg:object-[center_58%]"
+            className="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_58%]"
             loading={activeSlide === 0 ? 'eager' : 'lazy'}
             decoding="async"
             style={{ willChange: 'opacity, transform, filter', y: reduceMotion ? 0 : mediaY }}
