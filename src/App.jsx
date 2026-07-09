@@ -70,7 +70,6 @@ export default function App() {
             lineHeight: "1.6",
           }}
         >
-          Pour toute information, veuillez contacter l’administration d’École Jasmin.
         </p>
       </section>
     </main>
